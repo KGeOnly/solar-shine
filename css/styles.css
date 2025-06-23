@@ -1,0 +1,124 @@
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and global text styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header styles */
+header {
+  background-color: #ffd700;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #0066cc;
+}
+
+/* Hero section */
+.hero {
+  background: url('/solar-shine/images/solar-panels.jpg') no-repeat center center/cover;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 1px 1px 5px #000;
+}
+
+.hero-content {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Intro section */
+.intro {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  margin-top: 40px;
+}
+
+.filters {
+  text-align: center;
+  margin: 20px 0;
+}
+.filters button {
+  margin: 0 5px;
+  padding: 10px 15px;
+  border: none;
+  background: #ddd;
+  cursor: pointer;
+}
+.filters button:hover {
+  background: #ccc;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+.project img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 5px;
+  cursor: zoom-in;
+  transition: transform 0.3s;
+}
+.project img:hover {
+  transform: scale(1.02);
+}
+
+/* Lightbox styles */
+#lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+#lightbox img {
+  max-width: 90%;
+  max-height: 80%;
+  border: 5px solid white;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
