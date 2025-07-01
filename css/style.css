@@ -1,6 +1,6 @@
 /********** Template CSS **********/
 :root {
-    --primary: #32C36C;
+    --primary: #04456A;
     --light: #F6F7F8;
     --dark: #1A2A36;
 }
@@ -533,7 +533,7 @@
 }
 
 .footer .btn.btn-social:hover {
-    color: var(--primary);
+    color: #eab81b;
     border-color: var(--light);
 }
 
@@ -572,5 +572,5 @@
 }
 
 .footer .copyright a:hover {
-    color: var(--primary);
+    color: #eab81b;
 }
