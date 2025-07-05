@@ -576,19 +576,19 @@
 }
 
 @media (max-width: 768px) {
-  .gallery-section {
-    padding: 0 16px;
-  }
+    .gallery-section img {
+        width: 100%;
+        height: auto;
+    }
 
-  .gallery-title {
-    padding-left: 16px;
-  }
-
-  .gallery-images img {
-    width: 100%; /* Ensure they are responsive */
-    margin-bottom: 10px;
-  }
+    .gallery-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+        padding: 0 15px; /* Add horizontal padding */
+    }
 }
+
 
 .header-carousel .owl-carousel-item {
     height: 800px; /* Set your preferred uniform height */
