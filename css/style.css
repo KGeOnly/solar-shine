@@ -619,11 +619,16 @@
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
   }
 
   .btn-lg-square i {
     font-size: 20px !important;
     line-height: 1 !important;
+    transform: scale(1) !important;
+    display: inline-block !important;
   }
 }
+
 
