@@ -609,3 +609,21 @@
     object-fit: cover;
     display: block;
 }
+
+@media (max-width: 576px) {
+  .btn-lg-square {
+    width: 48px !important;
+    height: 48px !important;
+    border-radius: 50% !important;
+    padding: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+  }
+
+  .btn-lg-square i {
+    font-size: 20px !important;
+    line-height: 1 !important;
+  }
+}
+
