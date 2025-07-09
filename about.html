@@ -462,13 +462,17 @@
     <script src="js/main.js"></script>
 
     <!-- Language Redirect Logic -->
+<!-- Language Redirect Logic -->
 <script>
   const preferredLang = localStorage.getItem('language');
 
   // Redirect to Greek version if preferred and not already there
   if (preferredLang === 'gr' && !window.location.pathname.includes('-gr.html')) {
-    const currentPage = window.location.pathname.split('/').pop(); // e.g., "index.html"
-    const baseName = currentPage.replace('.html', '').replace('-gr', ''); // "index"
+    const currentPage = window.location.pathname.split('/').pop(); // e.g., "", "index.html", "about.html"
+    const baseName =
+      currentPage === "" || currentPage === "index.html"
+        ? "index"
+        : currentPage.replace('.html', '').replace('-gr', '');
     window.location.href = `${baseName}-gr.html`;
   }
 
@@ -479,29 +483,33 @@
       const lang = this.dataset.lang;
       localStorage.setItem('language', lang);
 
-      const currentPage = window.location.pathname.split('/').pop(); // e.g., "index.html"
-      const baseName = currentPage.replace('-gr.html', '').replace('.html', '');
+      const currentPage = window.location.pathname.split('/').pop(); // e.g., "", "index.html"
+      const baseName =
+        currentPage === "" || currentPage === "index.html"
+          ? "index"
+          : currentPage.replace('-gr.html', '').replace('.html', '');
       const target = `${baseName}${lang === 'gr' ? '-gr' : ''}.html`;
       window.location.href = target;
     });
   });
 
-  // Function for navigation buttons using JS
+  // Language-aware navigation (for nav buttons)
   function navigate(page) {
     const lang = localStorage.getItem('language') || 'en';
     window.location.href = `${page}${lang === 'gr' ? '-gr' : ''}.html`;
   }
 
-  // Handle buttons like "Get A Quote"
+  // For buttons like "Get A Quote"
   document.querySelectorAll('.lang-aware-link').forEach(link => {
-    link.addEventListener('click', (e) => {
+    link.addEventListener('click', function (e) {
       e.preventDefault();
       const lang = localStorage.getItem('language') || 'en';
-      const page = link.dataset.page;
+      const page = this.dataset.page;
       window.location.href = `${page}${lang === 'gr' ? '-gr' : ''}.html`;
     });
   });
 </script>
+
 
 
 
