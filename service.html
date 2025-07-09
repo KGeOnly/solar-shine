@@ -569,11 +569,14 @@
   const preferredLang = localStorage.getItem('language');
 
   // Redirect to Greek version if preferred and not already there
-  if (preferredLang === 'gr' && !window.location.pathname.includes('-gr.html')) {
-    const currentPage = window.location.pathname.split('/').pop(); // e.g., "index.html"
-    const baseName = currentPage.replace('.html', '').replace('-gr', ''); // "index"
-    window.location.href = `${baseName}-gr.html`;
-  }
+if (preferredLang === 'gr' && !window.location.pathname.includes('-gr.html')) {
+  const currentPage = window.location.pathname.split('/').pop(); // e.g., "", "index.html", "about.html"
+  const baseName =
+    currentPage === "" || currentPage === "index.html"
+      ? "index"
+      : currentPage.replace('.html', '').replace('-gr', '');
+  window.location.href = `${baseName}-gr.html`;
+}
 
   // Handle flag click
   document.querySelectorAll('.lang-flag').forEach(flag => {
