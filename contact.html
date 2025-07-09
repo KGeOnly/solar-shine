@@ -73,8 +73,9 @@
 
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top p-0">
-        <a href="index.html" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-5">
+        <a href="index.html" class="navbar-brand d-flex align-items-center border-end px-4 px-lg-4">
             <img src="img/logo3.png" alt="Logo" style="height: 80px;">
+
         </a>
         <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -85,17 +86,44 @@
                 <a href="about.html" class="nav-item nav-link">About</a>
                 <a href="service.html" class="nav-item nav-link">Services</a>
                 <a href="project.html" class="nav-item nav-link">Projects</a>
-                <a href="quote.html" class="nav-item nav-link">Free Quote</a>
                 <div class="nav-item dropdown">
                 <div class="dropdown-menu bg-light m-0">
                     </div>
                 </div>
-                <a href="contact.html" class="nav-item nav-link active">Contact</a>
+                <a href="contact.html" class="nav-item nav-link">Contact</a>
             </div>
+
+           <!-- Mobile Language Switcher -->
+            <div class="nav-item d-flex align-items-center px-2 d-block d-lg-none">
+            <a href="index.html" class="nav-link p-0 lang-flag" data-lang="en">
+            <img src="img/en.svg" alt="English" class="flag-icon">
+            </a>
+            <a href="index-gr.html" class="nav-link p-0 ms-2 lang-flag" data-lang="gr">
+            <img src="img/gr.svg" alt="Ελληνικά" class="flag-icon">
+            </a>
+            </div>
+
+
+            <!-- Desktop Language Switcher -->
+            <div class="nav-item d-flex align-items-center me-3 d-none d-lg-flex">
+            <a href="index.html" class="nav-link p-0 lang-flag" data-lang="en">
+            <img src="img/en.svg" alt="English" class="flag-icon">
+            </a>
+            <a href="index-gr.html" class="nav-link p-0 ms-2 lang-flag" data-lang="gr">
+            <img src="img/gr.svg" alt="Ελληνικά" class="flag-icon">
+            </a>
+            </div>
+
+           <!-- Mobile version (inside collapsible menu) -->
+            <div class="d-block d-lg-none">
+            <a href="quote.html" class="btn btn-primary rounded-0 px-4 d-flex align-items-center justify-content-center ms-lg-3" style="height: 100%;">Get A Quote<i class="fa fa-arrow-right ms-2"></i></a>
+            </div> <!-- Close .navbar-collapse -->
+
+            <!-- Desktop version (outside collapsible menu) -->
             <a href="quote.html" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Get A Quote<i class="fa fa-arrow-right ms-3"></i></a>
-        </div>
-    </nav>
+            </nav>
     <!-- Navbar End -->
+
 
 
     <!-- Page Header Start -->
@@ -408,6 +436,25 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+    <!-- Language Redirect Logic -->
+    <script>
+    // Redirect to Greek version if user previously selected Greek
+    const preferredLang = localStorage.getItem("lang");
+    if (preferredLang === "gr" && !window.location.pathname.includes("-gr.html")) {
+        const grPage = window.location.pathname.replace(".html", "-gr.html");
+        window.location.href = grPage;
+    }
+
+    // Save language preference on flag click
+    document.querySelectorAll('.lang-flag').forEach(link => {
+        link.addEventListener('click', function () {
+        const lang = this.dataset.lang;
+        localStorage.setItem("lang", lang);
+     });
+    });
+    </script>
+
 </body>
 
 </html>

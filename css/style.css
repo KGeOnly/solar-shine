@@ -638,3 +638,18 @@
     object-fit: cover;
     border-radius: 8px; /* Optional: matches Bootstrap's 'rounded' */
 }
+
+.navbar .nav-item img {
+  transition: transform 0.2s ease;
+}
+
+.navbar .nav-item img:hover {
+  transform: scale(1.1);
+}
+
+.flag-icon {
+  width: 24px;
+  height: 16px;
+  object-fit: cover;
+  border-radius: 2px;
+}
