@@ -82,23 +82,23 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav ms-auto p-4 p-lg-0">
-                <a href="index.html" class="nav-item nav-link active">Home</a>
-                <a href="about.html" class="nav-item nav-link">About</a>
-                <a href="service.html" class="nav-item nav-link">Services</a>
-                <a href="project.html" class="nav-item nav-link">Projects</a>
+                <a href="#" onclick="navigate('index')" class="nav-item nav-link">Home</a>
+                <a href="#" onclick="navigate('about')" class="nav-item nav-link">About</a>
+                <a href="#" onclick="navigate('service')" class="nav-item nav-link">Services</a>
+                <a href="#" onclick="navigate('project')" class="nav-item nav-link">Projects</a>
                 <div class="nav-item dropdown">
                 <div class="dropdown-menu bg-light m-0">
                     </div>
                 </div>
-                <a href="contact.html" class="nav-item nav-link">Contact</a>
+                <a href="#" onclick="navigate('contact')" class="nav-item nav-link">Contact</a>
             </div>
 
            <!-- Mobile Language Switcher -->
             <div class="nav-item d-flex align-items-center px-2 d-block d-lg-none">
-            <a href="index.html" class="nav-link p-0 lang-flag" data-lang="en">
+            <a href="#" class="nav-link p-0 lang-flag" data-lang="en">
             <img src="img/en.svg" alt="English" class="flag-icon">
             </a>
-            <a href="index-gr.html" class="nav-link p-0 ms-2 lang-flag" data-lang="gr">
+            <a href="#" class="nav-link p-0 ms-2 lang-flag" data-lang="gr">
             <img src="img/gr.svg" alt="Ελληνικά" class="flag-icon">
             </a>
             </div>
@@ -106,21 +106,21 @@
 
             <!-- Desktop Language Switcher -->
             <div class="nav-item d-flex align-items-center me-3 d-none d-lg-flex">
-            <a href="index.html" class="nav-link p-0 lang-flag" data-lang="en">
+            <a href="#" class="nav-link p-0 lang-flag" data-lang="en">
             <img src="img/en.svg" alt="English" class="flag-icon">
             </a>
-            <a href="index-gr.html" class="nav-link p-0 ms-2 lang-flag" data-lang="gr">
+            <a href="#" class="nav-link p-0 ms-2 lang-flag" data-lang="gr">
             <img src="img/gr.svg" alt="Ελληνικά" class="flag-icon">
             </a>
             </div>
 
            <!-- Mobile version (inside collapsible menu) -->
             <div class="d-block d-lg-none">
-            <a href="quote.html" class="btn btn-primary rounded-0 px-4 d-flex align-items-center justify-content-center ms-lg-3" style="height: 100%;">Get A Quote<i class="fa fa-arrow-right ms-2"></i></a>
+            <a href="#" data-page="quote" class="btn btn-primary rounded-0 px-4 d-flex align-items-center justify-content-center ms-lg-3 lang-aware-link" style="height: 100%;">Get A Quote<i class="fa fa-arrow-right ms-2"></i></a>
             </div> <!-- Close .navbar-collapse -->
 
             <!-- Desktop version (outside collapsible menu) -->
-            <a href="quote.html" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block">Get A Quote<i class="fa fa-arrow-right ms-3"></i></a>
+            <a href="#" data-page="quote" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block lang-aware-link">Get A Quote<i class="fa fa-arrow-right ms-3"></i></a>
             </nav>
     <!-- Navbar End -->
 
@@ -565,22 +565,48 @@
     <script src="js/main.js"></script>
 
     <!-- Language Redirect Logic -->
-    <script>
-    // Redirect to Greek version if user previously selected Greek
-    const preferredLang = localStorage.getItem("lang");
-    if (preferredLang === "gr" && !window.location.pathname.includes("-gr.html")) {
-        const grPage = window.location.pathname.replace(".html", "-gr.html");
-        window.location.href = grPage;
-    }
+<script>
+  const preferredLang = localStorage.getItem('language');
 
-    // Save language preference on flag click
-    document.querySelectorAll('.lang-flag').forEach(link => {
-        link.addEventListener('click', function () {
-        const lang = this.dataset.lang;
-        localStorage.setItem("lang", lang);
-     });
+  // Redirect to Greek version if preferred and not already there
+  if (preferredLang === 'gr' && !window.location.pathname.includes('-gr.html')) {
+    const currentPage = window.location.pathname.split('/').pop(); // e.g., "index.html"
+    const baseName = currentPage.replace('.html', '').replace('-gr', ''); // "index"
+    window.location.href = `${baseName}-gr.html`;
+  }
+
+  // Handle flag click
+  document.querySelectorAll('.lang-flag').forEach(flag => {
+    flag.addEventListener('click', function (e) {
+      e.preventDefault();
+      const lang = this.dataset.lang;
+      localStorage.setItem('language', lang);
+
+      const currentPage = window.location.pathname.split('/').pop(); // e.g., "index.html"
+      const baseName = currentPage.replace('-gr.html', '').replace('.html', '');
+      const target = `${baseName}${lang === 'gr' ? '-gr' : ''}.html`;
+      window.location.href = target;
     });
-    </script>
+  });
+
+  // Function for navigation buttons using JS
+  function navigate(page) {
+    const lang = localStorage.getItem('language') || 'en';
+    window.location.href = `${page}${lang === 'gr' ? '-gr' : ''}.html`;
+  }
+
+  // Handle buttons like "Get A Quote"
+  document.querySelectorAll('.lang-aware-link').forEach(link => {
+    link.addEventListener('click', (e) => {
+      e.preventDefault();
+      const lang = localStorage.getItem('language') || 'en';
+      const page = link.dataset.page;
+      window.location.href = `${page}${lang === 'gr' ? '-gr' : ''}.html`;
+    });
+  });
+</script>
+
+
 
 </body>
 
