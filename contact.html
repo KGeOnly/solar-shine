@@ -6,22 +6,34 @@
      <title>Solar Panel Cleaning Cyprus | Solar Shine Cyprus</title>
 
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://solarshine.com.cy/index.html">
+    <link rel="canonical" href="https://solarshine.com.cy/contact.html">
 
     <!-- Hreflang for language versions -->
-    <link rel="alternate" href="https://solarshine.com.cy/index.html" hreflang="en" />
-    <link rel="alternate" href="https://solarshine.com.cy/index-gr.html" hreflang="el" />
+    <link rel="alternate" href="https://solarshine.com.cy/contact.html" hreflang="en" />
+    <link rel="alternate" href="https://solarshine.com.cy/contact-gr.html" hreflang="el" />
+
+     <!-- Organization structured data for logo/favicon in search -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Solar Shine Cyprus",
+    "url": "https://solarshine.com.cy",
+    "logo": "https://solarshine.com.cy/img/android-chrome-192x192.png"
+  }
+  </script>
+
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
 
     <!-- Favicon -->
-   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="192x192" href="img/android-chrome-192x192.png">
-<link rel="icon" type="image/png" sizes="512x512" href="img/android-chrome-512x512.png">
-<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
-<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="img/android-chrome-192x192.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="img/android-chrome-512x512.png">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -462,51 +474,51 @@
     <!-- Language Redirect Logic -->
 <!-- Language Redirect Logic -->
 <script>
-  const preferredLang = localStorage.getItem('language');
+  window.addEventListener('DOMContentLoaded', () => {
+    const preferredLang = localStorage.getItem('language');
 
-  // Redirect to Greek version if preferred and not already there
-  if (preferredLang === 'gr' && !window.location.pathname.includes('-gr.html')) {
-    const currentPage = window.location.pathname.split('/').pop(); // e.g., "", "index.html", "about.html"
-    const baseName =
-      currentPage === "" || currentPage === "index.html"
-        ? "index"
-        : currentPage.replace('.html', '').replace('-gr', '');
-    window.location.href = `${baseName}-gr.html`;
-  }
-
-  // Handle flag click
-  document.querySelectorAll('.lang-flag').forEach(flag => {
-    flag.addEventListener('click', function (e) {
-      e.preventDefault();
-      const lang = this.dataset.lang;
-      localStorage.setItem('language', lang);
-
-      const currentPage = window.location.pathname.split('/').pop(); // e.g., "", "index.html"
+    // Redirect to Greek version only after DOM loads and if not already there
+    if (preferredLang === 'gr' && !window.location.pathname.includes('-gr.html')) {
+      const currentPage = window.location.pathname.split('/').pop(); // e.g., "", "index.html", "about.html"
       const baseName =
         currentPage === "" || currentPage === "index.html"
           ? "index"
-          : currentPage.replace('-gr.html', '').replace('.html', '');
-      const target = `${baseName}${lang === 'gr' ? '-gr' : ''}.html`;
-      window.location.href = target;
+          : currentPage.replace('.html', '').replace('-gr', '');
+      window.location.href = `${baseName}-gr.html`;
+    }
+
+    // Handle flag clicks
+    document.querySelectorAll('.lang-flag').forEach(flag => {
+      flag.addEventListener('click', function (e) {
+        e.preventDefault();
+        const lang = this.dataset.lang;
+        localStorage.setItem('language', lang);
+
+        const currentPage = window.location.pathname.split('/').pop(); // e.g., "service.html"
+        const baseName = currentPage.replace('-gr.html', '').replace('.html', '');
+        const target = `${baseName}${lang === 'gr' ? '-gr' : ''}.html`;
+        window.location.href = target;
+      });
     });
-  });
 
-  // Language-aware navigation (for nav buttons)
-  function navigate(page) {
-    const lang = localStorage.getItem('language') || 'en';
-    window.location.href = `${page}${lang === 'gr' ? '-gr' : ''}.html`;
-  }
-
-  // For buttons like "Get A Quote"
-  document.querySelectorAll('.lang-aware-link').forEach(link => {
-    link.addEventListener('click', function (e) {
-      e.preventDefault();
+    // For programmatic navigation (e.g., via buttons)
+    function navigate(page) {
       const lang = localStorage.getItem('language') || 'en';
-      const page = this.dataset.page;
       window.location.href = `${page}${lang === 'gr' ? '-gr' : ''}.html`;
+    }
+
+    // For links with .lang-aware-link class (like Get A Quote)
+    document.querySelectorAll('.lang-aware-link').forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        const lang = localStorage.getItem('language') || 'en';
+        const page = this.dataset.page;
+        window.location.href = `${page}${lang === 'gr' ? '-gr' : ''}.html`;
+      });
     });
   });
 </script>
+
 
 
 
