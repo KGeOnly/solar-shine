@@ -473,45 +473,49 @@
 
    <!-- Language Redirect Logic -->
 <script>
-  const preferredLang = localStorage.getItem("language");
+  document.addEventListener('DOMContentLoaded', function () {
+    const preferredLang = localStorage.getItem("language");
 
-  // Redirect to English version if user prefers English and is on Greek page
-  if (preferredLang === "en" && window.location.pathname.includes("-gr.html")) {
-    const currentPage = window.location.pathname.split('/').pop(); // e.g., "index-gr.html"
-    const baseName = currentPage.replace('-gr.html', '');
-    window.location.href = `${baseName}.html`;
-  }
+    // Redirect to English version if user prefers English and is on Greek page
+    if (preferredLang === "en" && window.location.pathname.includes("-gr.html")) {
+      const currentPage = window.location.pathname.split('/').pop(); // e.g., "service-gr.html"
+      const baseName = currentPage.replace('-gr.html', '');
+      window.location.href = `${baseName}.html`;
+    }
 
-  // Save selected language from flag click
-  document.querySelectorAll('.lang-flag').forEach(link => {
-    link.addEventListener('click', function (e) {
-      e.preventDefault();
-      const lang = this.dataset.lang;
-      localStorage.setItem("language", lang);
+    // Save selected language from flag click
+    document.querySelectorAll('.lang-flag').forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        const lang = this.dataset.lang;
+        localStorage.setItem("language", lang);
 
-      const currentPage = window.location.pathname.split('/').pop(); // e.g., "index-gr.html"
-      const baseName = currentPage.replace('-gr.html', '').replace('.html', '');
-      const target = `${baseName}${lang === 'gr' ? '-gr' : ''}.html`;
-      window.location.href = target;
+        const currentPage = window.location.pathname.split('/').pop(); // e.g., "service-gr.html"
+        const baseName = currentPage.replace('-gr.html', '').replace('.html', '');
+        const target = `${baseName}${lang === 'gr' ? '-gr' : ''}.html`;
+        window.location.href = target;
+      });
     });
-  });
 
-  // JS navigation for nav items (uses page name without extension)
-  function navigate(page) {
-    const lang = localStorage.getItem("language") || "en";
-    window.location.href = `${page}${lang === 'gr' ? '-gr' : ''}.html`;
-  }
-
-  // Handle language-aware buttons (e.g. Get A Quote)
-  document.querySelectorAll('.lang-aware-link').forEach(link => {
-    link.addEventListener('click', function (e) {
-      e.preventDefault();
+    // JS navigation for nav items
+    window.navigate = function (page) {
       const lang = localStorage.getItem("language") || "en";
-      const page = this.dataset.page;
       window.location.href = `${page}${lang === 'gr' ? '-gr' : ''}.html`;
+    };
+
+    // For buttons like "Get A Quote"
+    document.querySelectorAll('.lang-aware-link').forEach(link => {
+      link.addEventListener('click', function (e) {
+        e.preventDefault();
+        const lang = localStorage.getItem("language") || "en";
+        const page = this.dataset.page;
+        window.location.href = `${page}${lang === 'gr' ? '-gr' : ''}.html`;
+      });
     });
   });
 </script>
+
+
 
 
 

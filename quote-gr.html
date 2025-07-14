@@ -475,7 +475,7 @@
 
    <!-- Language Redirect Logic -->
 <script>
-  window.addEventListener('DOMContentLoaded', () => {
+  document.addEventListener('DOMContentLoaded', function () {
     const preferredLang = localStorage.getItem("language");
 
     // Redirect to English version if user prefers English and is on Greek page
@@ -499,13 +499,13 @@
       });
     });
 
-    // JS navigation for nav items (uses page name without extension)
-    function navigate(page) {
+    // JS navigation for nav items
+    window.navigate = function (page) {
       const lang = localStorage.getItem("language") || "en";
       window.location.href = `${page}${lang === 'gr' ? '-gr' : ''}.html`;
-    }
+    };
 
-    // Handle language-aware buttons (e.g. Get A Quote)
+    // For buttons like "Get A Quote"
     document.querySelectorAll('.lang-aware-link').forEach(link => {
       link.addEventListener('click', function (e) {
         e.preventDefault();
@@ -516,8 +516,6 @@
     });
   });
 </script>
-
-
 
 
 </body>

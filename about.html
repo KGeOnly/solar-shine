@@ -496,15 +496,15 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
 
-    <!-- Language Redirect Logic -->
+
 <!-- Language Redirect Logic -->
 <script>
-  window.addEventListener('DOMContentLoaded', () => {
+  document.addEventListener('DOMContentLoaded', function () {
     const preferredLang = localStorage.getItem('language');
 
-    // Redirect to Greek version only after DOM loads and if not already there
+    // Redirect to Greek version if preferred and not already there
     if (preferredLang === 'gr' && !window.location.pathname.includes('-gr.html')) {
-      const currentPage = window.location.pathname.split('/').pop(); // e.g., "", "index.html", "about.html"
+      const currentPage = window.location.pathname.split('/').pop(); // e.g., "about.html"
       const baseName =
         currentPage === "" || currentPage === "index.html"
           ? "index"
@@ -512,27 +512,30 @@
       window.location.href = `${baseName}-gr.html`;
     }
 
-    // Handle flag clicks
+    // Handle flag click
     document.querySelectorAll('.lang-flag').forEach(flag => {
       flag.addEventListener('click', function (e) {
         e.preventDefault();
         const lang = this.dataset.lang;
         localStorage.setItem('language', lang);
 
-        const currentPage = window.location.pathname.split('/').pop(); // e.g., "service.html"
-        const baseName = currentPage.replace('-gr.html', '').replace('.html', '');
+        const currentPage = window.location.pathname.split('/').pop(); // e.g., "about.html"
+        const baseName =
+          currentPage === "" || currentPage === "index.html"
+            ? "index"
+            : currentPage.replace('-gr.html', '').replace('.html', '');
         const target = `${baseName}${lang === 'gr' ? '-gr' : ''}.html`;
         window.location.href = target;
       });
     });
 
-    // For programmatic navigation (e.g., via buttons)
-    function navigate(page) {
+    // Language-aware navigation (e.g. using navigate('about'))
+    window.navigate = function (page) {
       const lang = localStorage.getItem('language') || 'en';
       window.location.href = `${page}${lang === 'gr' ? '-gr' : ''}.html`;
-    }
+    };
 
-    // For links with .lang-aware-link class (like Get A Quote)
+    // For buttons like "Get A Quote"
     document.querySelectorAll('.lang-aware-link').forEach(link => {
       link.addEventListener('click', function (e) {
         e.preventDefault();
