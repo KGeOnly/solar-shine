@@ -653,3 +653,16 @@
   object-fit: cover;
   border-radius: 2px;
 }
+
+/* Remove yellow outline and green background from active accordion */
+.accordion-button:not(.collapsed) {
+  color: #04456A;                  /* text color when active */
+  background-color: #f8f9fa;       /* light grey background (or white) */
+  box-shadow: none;                /* removes focus glow */
+}
+
+.accordion-button:focus {
+  border-color: #04456A;           /* optional: blue border when focused */
+  box-shadow: none;                /* no glow outline */
+}
+
