@@ -254,9 +254,9 @@
                 </div>
                 <div class="col-lg-4 col-md-6 portfolio-item second">
                     <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="img/anarita2.JPG" alt="">
+                        <img class="img-fluid" src="img/anarita2.jpg" alt="">
                         <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="img/anarita2.JPG" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="img/anarita2.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
                             
                         </div>
                     </div>
@@ -312,6 +312,19 @@
         <div class="col-12 col-sm-6">
             <input type="text" name="phone" class="form-control border-0" placeholder="Το Κινητό σας" required style="height: 55px;">
         </div>
+
+          <!-- NEW: Area/District selector -->
+              <div class="col-12 col-sm-6">
+                <select name="area" class="form-select border-0" required style="height:55px;" aria-label="Επιλέξτε Επαρχία">
+                  <option value="" disabled selected>Επιλέξτε Επαρχία</option>
+                  <option value="Λευκωσία">Λευκωσία</option>
+                  <option value="Λάρνακα">Λάρνακα</option>
+                  <option value="Λεμεσό">Λεμεσό</option>
+                  <option value="Πάφο">Πάφο</option>
+                </select>
+              </div>
+
+
         <div class="col-12 col-sm-6">
             <select name="service" class="form-select border-0" required style="height: 55px;">
                 <option value="" disabled selected>Επιλέξτε Υπηρεσία</option>
@@ -320,6 +333,15 @@
                 <option value="Industrial Solar Panel Cleaning">Καθαρισμός Ηλιακών Πάνελ για Βιομηχανίες</option>
             </select>
         </div>
+
+<!-- Call Us button in the same row -->
+<div class="col-12 col-sm-6 d-flex align-items-center">
+  <a href="tel:+35796252850" 
+     class="btn btn-outline-warning rounded-pill w-100 py-3 px-5 text-center">
+     Call Us
+  </a>
+</div>
+
         <div class="col-12">
             <textarea name="note" class="form-control border-0" rows="4" placeholder="Ειδική Σημείωση"></textarea>
         </div>
