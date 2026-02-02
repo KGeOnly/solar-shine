@@ -143,6 +143,7 @@
                 <a href="#" onclick="navigate('about')" class="nav-item nav-link">Σχετικα</a>
                 <a href="#" onclick="navigate('service')" class="nav-item nav-link">Οι Υπηρεσιες μας</a>
                 <a href="#" onclick="navigate('project')" class="nav-item nav-link">Τα Εργα μας</a>
+                <a href="#" onclick="navigate('faq')" class="nav-item nav-link">Ερωτησεις</a>
                 <div class="nav-item dropdown">
                 <div class="dropdown-menu bg-light m-0">
                     </div>
@@ -173,35 +174,41 @@
 
            <!-- Mobile version (inside collapsible menu) -->
             <div class="d-block d-lg-none">
-            <a href="#" data-page="quote" class="btn btn-primary rounded-0 px-4 d-flex align-items-center justify-content-center ms-lg-3 lang-aware-link" style="height: 100%;">Get A Quote<i class="fa fa-arrow-right ms-2"></i></a>
+            <a href="#" data-page="quote" class="btn btn-primary rounded-0 px-4 d-flex align-items-center justify-content-center ms-lg-3 lang-aware-link" style="height: 100%;">Ζητήστε Δωρεάν Προσφορά<i class="fa fa-arrow-right ms-2"></i></a>
             </div> <!-- Close .navbar-collapse -->
 
             <!-- Desktop version (outside collapsible menu) -->
-            <a href="#" data-page="quote" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block lang-aware-link">Get A Quote<i class="fa fa-arrow-right ms-3"></i></a>
+            <a href="#" data-page="quote" class="btn btn-primary rounded-0 py-4 px-lg-5 d-none d-lg-block lang-aware-link">Ζητήστε Δωρεάν Προσφορά<i class="fa fa-arrow-right ms-3"></i></a>
             </nav>
     <!-- Navbar End -->
 
 
    <!-- Carousel Start -->
-<div class="container-fluid p-0 pb-5 wow fadeIn" data-wow-delay="0.1s">
-  <div class="owl-carousel header-carousel position-relative" role="region" aria-label="Προτεινόμενες Υπηρεσίες">
-    
-    <!-- Slide 1 (main H1) -->
-    <div class="owl-carousel-item position-relative" data-dot="<img src='img/carousel-1.jpg' alt='Καθαρισμός φωτοβολταϊκών στην Κύπρο'>">
+<div class="container-fluid p-0 wow fadeIn" data-wow-delay="0.1s">
+  <div class="owl-carousel header-carousel position-relative" role="region" aria-label="Featured services">
+
+    <!-- Slide 1 (keep the single H1 here) -->
+    <div class="owl-carousel-item position-relative"
+         data-dot="<img src='img/carousel-1-thumb.jpg' alt='Καθαρισμός φωτοβολταϊκών στην Κύπρο'>">
       <img class="img-fluid" src="img/carousel-1.jpg"
            alt="Τεχνικός καθαρίζει οικιακά φωτοβολταϊκά πάνελ στην Κύπρο"
-           loading="eager" fetchpriority="high" decoding="async" width="1920" height="900"
+           loading="eager" fetchpriority="high" decoding="async"
+           width="1920" height="900"
            style="aspect-ratio: 1920 / 900; object-fit: cover;">
       <div class="owl-carousel-inner">
         <div class="container">
           <div class="row justify-content-start">
             <div class="col-10 col-lg-8 ps-10">
-              <h1 class="display-2 text-white animated slideInDown">Επαγγελματικός Καθαρισμός Φωτοβολταϊκών στην Κύπρο</h1>
+              <h1 class="display-2 text-white animated slideInDown">
+                Επαγγελματικός Καθαρισμός Φωτοβολταϊκών στην Κύπρο
+              </h1>
               <p class="fs-5 fw-medium text-white mb-4 pb-3">
                 Η μέγιστη απόδοση ξεκινά με σωστή φροντίδα. Καθαρισμός πάνελ από ειδικούς.
               </p>
-              <a class="btn btn-primary rounded-pill py-3 px-5" href="/quote-gr.html" aria-label="Ζητήστε δωρεάν προσφορά για καθαρισμό φωτοβολταϊκών">
-                Δωρεάν Προσφορά
+              <a class="btn btn-primary rounded-pill py-3 px-5"
+                 href="/quote.html"
+                 aria-label="Get a free quote for solar panel cleaning">
+                Ζητήστε Δωρεάν Προσφορά
               </a>
             </div>
           </div>
@@ -209,42 +216,58 @@
       </div>
     </div>
 
-    <!-- Slide 2 (H2) -->
-    <div class="owl-carousel-item position-relative" data-dot="<img src='img/carousel-2.jpg' alt='Οικιακός καθαρισμός φωτοβολταϊκών'>">
+    <!-- Slide 2 (use H2) -->
+    <div class="owl-carousel-item position-relative"
+         data-dot="<img src='img/carousel-2-thumb.jpg' alt='Residential solar panel cleaning'>">
       <img class="img-fluid" src="img/carousel-2.jpg"
            alt="Καθαρισμός φωτοβολταϊκών σε οικιακή στέγη στη Λευκωσία"
-           loading="lazy" decoding="async" width="1920" height="900"
+           loading="lazy" decoding="async"
+           width="1920" height="900"
            style="aspect-ratio: 1920 / 900; object-fit: cover;">
       <div class="owl-carousel-inner">
         <div class="container">
           <div class="row justify-content-start">
             <div class="col-10 col-lg-8 ps-10">
-              <h2 class="display-2 text-white animated slideInDown">Οικιακός Καθαρισμός Φωτοβολταϊκών</h2>
+              <h2 class="display-2 text-white animated slideInDown">
+                Οικιακός καθαρισμός φωτοβολταϊκών
+              </h2>
               <p class="fs-5 fw-medium text-white mb-4 pb-3">
-                Καθαρά πάνελ, μεγαλύτερη απόδοση, μικρότεροι λογαριασμοί. Εξυπηρέτηση σε Λευκωσία, Λεμεσό, Λάρνακα & Πάφο.
+                Καθαρά πάνελ, μεγαλύτερη απόδοση, μικρότεροι λογαριασμοί. Εξυπηρέτηση σε Λευκωσία, Λεμεσό, Λάρνακα, Πάφο &amp; Αμμόχωστο.
               </p>
-              <a class="btn btn-primary rounded-pill py-3 px-5" href="/service-gr.html#residential">Μάθετε Περισσότερα</a>
+              <a class="btn btn-primary rounded-pill py-3 px-5"
+                 href="/service.html#residential"
+                 aria-label="Learn more about residential solar panel cleaning">
+                Μάθε Περισσότερα
+              </a>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- Slide 3 (H2) -->
-    <div class="owl-carousel-item position-relative" data-dot="<img src='img/carousel-3.jpg' alt='Καθαρισμός φωτοβολταϊκών για επιχειρήσεις'>">
+    <!-- Slide 3 (use H2 + keywords) -->
+    <div class="owl-carousel-item position-relative"
+         data-dot="<img src='img/carousel-3-thumb.jpg' alt='Commercial and industrial solar cleaning'>">
       <img class="img-fluid" src="img/carousel-3.jpg"
            alt="Καθαρισμός φωτοβολταϊκών σε εμπορικό και βιομηχανικό χώρο στην Κύπρο"
-           loading="lazy" decoding="async" width="1920" height="900"
+           loading="lazy" decoding="async"
+           width="1920" height="900"
            style="aspect-ratio: 1920 / 900; object-fit: cover;">
       <div class="owl-carousel-inner">
         <div class="container">
           <div class="row justify-content-start">
             <div class="col-10 col-lg-8 ps-10">
-              <h2 class="display-2 text-white animated slideInDown">Εμπορικός & Βιομηχανικός Καθαρισμός Φωτοβολταϊκών</h2>
+              <h2 class="display-2 text-white animated slideInDown">
+                Καθαρισμός φωτοβολταϊκών για επιχειρήσεις
+              </h2>
               <p class="fs-5 fw-medium text-white mb-4 pb-3">
                 Συντήρηση για μέγιστη απόδοση. Αξιόπιστες, επαγγελματικές υπηρεσίες καθαρισμού για επιχειρήσεις σε όλη την Κύπρο.
               </p>
-              <a class="btn btn-primary rounded-pill py-3 px-5" href="/service-gr.html#commercial">Δείτε Υπηρεσίες</a>
+              <a class="btn btn-primary rounded-pill py-3 px-5"
+                 href="/service.html"
+                 aria-label="View all solar panel cleaning services">
+                Δείτε τις Υπηρεσίες μας
+              </a>
             </div>
           </div>
         </div>
@@ -255,454 +278,1402 @@
 </div>
 <!-- Carousel End -->
 
-
-
-    <!-- Feature Start -->
+<!-- Service Start -->   
 <div class="container-xxl py-5">
-    <div class="container">
-        <div class="row justify-content-center g-5">
+  <div class="container">
+    <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+      <h6 class="text-primary" style="color: #04456A !important;">Οι Υπηρεσίες μας</h6>
+      <h1 class="mb-4">Είμαστε πρωτοπόροι στον κόσμο των ανανεώσιμων πηγών ενέργειας.</h1>
+    </div>
 
-            <!-- Facebook -->
-            <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.1s">
-                <a href="https://www.facebook.com/profile.php?id=61577902356615" target="_blank" class="text-decoration-none text-dark">
-                    <div class="d-flex align-items-center mb-4">
-                        <div class="btn-lg-square bg-primary rounded-circle me-3">
-                            <i class="fab fa-facebook-f text-white"></i>
-                        </div>
-                        <h1 class="mb-0">Facebook</h1>
-                    </div>
-                    <h5 class="mb-3 text-center">Ακολουθήστε μας!</h5>
-                </a>
-            </div> 
+    <div class="row g-4">
 
-            <!-- Instagram -->
-            <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.3s">
-                <a href="https://www.instagram.com/solarshinecyprus/" target="_blank" class="text-decoration-none text-dark">
-                    <div class="d-flex align-items-center mb-4">
-                        <div class="btn-lg-square bg-primary rounded-circle me-3">
-                            <i class="fab fa-instagram text-white"></i>
-                        </div>
-                        <h1 class="mb-0">Instagram</h1>
-                    </div>
-                    <h5 class="mb-3 text-center">Ακολουθήστε μας!</h5>
-                </a>
-            </div> 
+      <!-- Service Item 1 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="service-item rounded overflow-hidden h-100 d-flex flex-column">
 
-            <!-- Tiktok -->
-            <div class="col-md-6 col-lg-3 wow fadeIn" data-wow-delay="0.5s">
-                <a href="https://www.tiktok.com/@solarshinecyprus?is_from_webapp=1&sender_device=pc" target="_blank" class="text-decoration-none text-dark">
-                    <div class="d-flex align-items-center mb-4">
-                        <div class="btn-lg-square bg-primary rounded-circle me-3">
-                            <i class="fab fa-tiktok text-white"></i>
-                        </div>
-                        <h1 class="mb-0">Tiktok</h1>
-                    </div>
-                    <h5 class="mb-3 text-center">Ακολουθήστε μας!</h5>
-                </a>
-            </div> 
+          <div class="service-img">
+            <picture>
+              <!-- Modern format -->
+              <source srcset="img/Service/service_1.webp" type="image/webp">
+              <!-- Fallback -->
+              <img
+                class="img-fluid"
+                src="img/Service/service_1.jpg"
+                alt="Residential"
+                loading="lazy"
+                decoding="async"
+                width="900"
+                height="600"
+              >
+            </picture>
+          </div>
+
+          <div class="position-relative p-4 flex-grow-1 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="service-icon">
+              <i class="fa fa-solar-panel fa-3x"></i>
+            </div>
+            <h4 class="mb-3">Καθαρισμός Κατοικιών</h4>
+            <p>Διατηρήστε τα φωτοβολταϊκά πάνελ του σπιτιού σας αποδοτικά και πεντακάθαρα με τις ασφαλείς και φιλικές προς το περιβάλλον λύσεις καθαρισμού μας.</p>
+          </div>
 
         </div>
+      </div>
+
+      <!-- Service Item 2 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="service-item rounded overflow-hidden h-100 d-flex flex-column">
+
+          <div class="service-img raise-up">
+            <picture>
+              <!-- Modern format -->
+              <source srcset="img/Service/service_2.webp" type="image/webp">
+              <!-- Fallback -->
+              <img
+                class="img-fluid"
+                src="img/Service/service_2.jpg"
+                alt="Commercial"
+                loading="lazy"
+                decoding="async"
+                width="900"
+                height="600"
+              >
+            </picture>
+          </div>
+
+          <div class="position-relative p-4 flex-grow-1 wow fadeInUp" data-wow-delay="0.3s">
+            <div class="service-icon">
+              <i class="fa fa-building fa-3x"></i>
+            </div>
+            <h4 class="mb-3">Επαγγελματικός Καθαρισμός</h4>
+            <p>Μεγιστοποιήστε την ενεργειακή απόδοση και τη διάρκεια ζωής του συστήματός σας για την επιχείρησή σας με προγραμματισμένο, επαγγελματικού επιπέδου καθαρισμό.</p>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Service Item 3 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="service-item rounded overflow-hidden h-100 d-flex flex-column">
+
+          <div class="service-img raise-up raise-up-more">
+            <picture>
+              <!-- Modern format -->
+              <source srcset="img/Service/service_3.webp" type="image/webp">
+              <!-- Fallback -->
+              <img
+                class="img-fluid"
+                src="img/Service/service_3.jpg"
+                alt="Industrial"
+                loading="lazy"
+                decoding="async"
+                width="900"
+                height="600"
+              >
+            </picture>
+          </div>
+
+          <div class="position-relative p-4 flex-grow-1 wow fadeInUp" data-wow-delay="0.5s">
+            <div class="service-icon">
+              <i class="fa fa-lightbulb fa-3x"></i>
+            </div>
+            <h4 class="mb-3">Βιομηχανικός Καθαρισμός</h4>
+            <p>Εξειδικευμένος καθαρισμός για μεγάλης κλίμακας φωτοβολταϊκές εγκαταστάσεις, διασφαλίζοντας μέγιστη απόδοση και συμμόρφωση με τα πρότυπα.</p>
+          </div>
+
+        </div>
+      </div>
+
+    </div> <!-- /.row -->
+  </div> <!-- /.container -->
+</div> <!-- /.container-xxl -->
+<!-- Service End -->
+
+<!-- Feature Start -->
+<div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+  <div class="container feature px-lg-0">
+    <div class="row g-0 mx-lg-0 align-items-stretch">
+
+      <!-- Text Column -->
+      <div class="col-lg-6 feature-text py-5 wow fadeIn" data-wow-delay="0.1s">
+        <div class="p-lg-5 ps-lg-0 h-100 d-flex flex-column justify-content-center">
+          <h6 class="text-primary mb-2" style="color: #04456A !important;">Γιατί να μας επιλέξετε!</h6>
+
+          <h2 class="mb-3 feature-title">Αξιόπιστοι, Φιλικοί και Πάντα στην Ώρα μας</h2>
+
+          <p class="feature-lead mb-4 w-100">
+            Επαγγελματικός καθαρισμός φωτοβολταϊκών πάνελ σε όλη την Κύπρο με ασφαλή εξοπλισμό και σταθερά αποτελέσματα που μπορείτε να δείτε.
+          </p>
+
+          <div class="row g-4 mb-4">
+            <div class="col-6">
+              <div class="d-flex align-items-start feature-point">
+                <div class="btn-lg-square bg-primary rounded-circle flex-shrink-0">
+                  <i class="fa fa-check text-white"></i>
+                </div>
+                <div class="ms-3">
+                  <h6 class="mb-1">Αποτέλεσμα χωρίς σημάδια</h6>
+                  <small class="text-muted">Καθαρά πάνελ, μέγιστη απόδοση.</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6">
+              <div class="d-flex align-items-start feature-point">
+                <div class="btn-lg-square bg-primary rounded-circle flex-shrink-0">
+                  <i class="fa fa-user-check text-white"></i>
+                </div>
+                <div class="ms-3">
+                  <h6 class="mb-1">Άρτια Εκπαιδευμένο Προσωπικό</h6>
+                  <small class="text-muted">Προσεκτικοί, ασφαλείς, επαγγελματίες.</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6">
+              <div class="d-flex align-items-start feature-point">
+                <div class="btn-lg-square bg-primary rounded-circle flex-shrink-0">
+                  <i class="fa fa-comments text-white"></i>
+                </div>
+                <div class="ms-3">
+                  <h6 class="mb-1">Δωρεάν Προσφορά</h6>
+                  <small class="text-muted">Γρήγορη εκτίμηση και προγραμματισμός.</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6">
+              <div class="d-flex align-items-start feature-point">
+                <div class="btn-lg-square bg-primary rounded-circle flex-shrink-0">
+                  <i class="fa fa-headphones text-white"></i>
+                </div>
+                <div class="ms-3">
+                  <h6 class="mb-1">Γρήγορη Υποστήριξη</h6>
+                  <small class="text-muted">Απαντάμε άμεσα.</small>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="d-flex gap-3 flex-wrap">
+            <a class="btn btn-primary rounded-pill py-3 px-5" href="/quote-gr.html">
+              Δωρεάν Προσφορά
+            </a>
+            <a class="btn btn-outline-primary rounded-pill py-3 px-5" href="/contact-gr.html">
+              Επικοινωνήστε Μαζί μας
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Image Column (Overlay Images) -->
+      <div class="col-lg-6 pe-lg-0 wow fadeIn" data-wow-delay="0.5s">
+        <div class="feature-overlay-wrap">
+
+          <!-- Main Image -->
+          <div class="feature-main-img">
+            <picture>
+              <source srcset="img/msr_training.webp" type="image/webp">
+              <img
+                src="img/msr_training.webp"
+                alt="Φωτοβολταϊκά πάνελ σε στέγη στην Κύπρο"
+                loading="lazy"
+                decoding="async"
+              >
+            </picture>
+          </div>
+
+          <!-- Overlay Image -->
+          <div class="feature-overlay-img">
+            <picture>
+              <source srcset="img/msr_cert.webp" type="image/webp">
+              <img
+                src="img/msr_cert.webp"
+                alt="Επαγγελματική ομάδα καθαρισμού φωτοβολταϊκών πάνελ"
+                loading="lazy"
+                decoding="async"
+              >
+            </picture>
+          </div>
+
+        </div>
+      </div>
+
     </div>
+  </div>
 </div>
 <!-- Feature End -->
 
 
-
-
-    <!-- About Start -->
-    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
-        <div class="container about px-lg-0">
-            <div class="row g-0 mx-lg-0">
-                <div class="col-lg-6 ps-lg-0 wow fadeIn" data-wow-delay="0.1s" style="min-height: 400px;">
-                    <div class="position-relative h-100">
-                       <img class="img-fluid" src="img/about.jpg" alt="" style="max-width: 100%; height: auto; object-fit: contain;">
-
-                    </div>
-                </div>
-                <div class="col-lg-6 about-text py-5 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="p-lg-5 pe-lg-0">
-                        <h6 class="text-primary" style="color: #04456A !important;"> Σχετικά με εμάς</h6>
-                       <h1 class="mb-4">Αυξήστε την Απόδοση των Φωτοβολταϊκών σας με Αξιόπιστο Καθαρισμό</h1>
-                        <p>Είμαστε μια αφοσιωμένη ομάδα επαγγελματιών που παρέχει υψηλής ποιότητας λύσεις καθαρισμού φωτοβολταϊκών για σπίτια, επιχειρήσεις και φωτοβολταϊκά πάρκα. 
-                          Η αποστολή μας είναι απλή:</p>
-                      <p><i class="fa fa-check-circle me-3" style="color: #04456A;"></i>Καθαρότερα πάνελ</p>
-                      <p><i class="fa fa-check-circle me-3" style="color: #04456A;"></i>Μεγαλύτερη ενεργειακή απόδοση</p>
-                      <p><i class="fa fa-check-circle me-3" style="color: #04456A;"></i>Μεγαλύτερη διάρκεια ζωής του συστήματος</p>
-
-
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- About End -->
-
-
-    <!-- Service Start -->
-     <!--
+    <!-- Projects Start -->
 <div class="container-xxl py-5">
-    <div class="container">
-        <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-            <h6 class="text-primary" style="color: #04456A !important;">Our Services</h6>
+  <div class="container">
 
-            <h1 class="mb-4">We Are Pioneers In The World Of Renewable Energy</h1>
-        </div>
-        <div class="row g-4">
-            <!-- Service Item 1 -->
-             <!-- 
-            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="service-item rounded overflow-hidden h-100 d-flex flex-column">
-                    <img class="img-fluid w-100" src="img/resident.jpg" alt="Residential" style="height: 250px; object-fit: cover;">
-                    <div class="position-relative p-4 flex-grow-1">
-                        <div class="service-icon">
-                            <i class="fa fa-solar-panel fa-3x"></i>
-                        </div>
-                        <h4 class="mb-3">Residential Solar Panel Cleaning</h4>
-                        <p>Keep your home's solar panels efficient and spotless with our safe, eco-friendly cleaning solutions.</p>
-                        
-                    </div>
-                </div>
-            </div>
-
-            <!-- Service Item 2 -->
-             <!-- 
-            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="service-item rounded overflow-hidden h-100 d-flex flex-column">
-                    <img class="img-fluid w-100" src="img/comercial.jpg" alt="Commercial" style="height: 250px; object-fit: cover;">
-                    <div class="position-relative p-4 flex-grow-1">
-                        <div class="service-icon">
-                            <i class="fa fa-building fa-3x"></i>
-                        </div>
-                        <h4 class="mb-3">Commercial Solar Panel Cleaning</h4>
-                        <p>Maximize energy output and system lifespan for your business with scheduled, expert-grade cleaning.</p>
-                        
-                    </div>
-                </div>
-            </div>
-
-            <!-- Service Item 3 -->
-             <!-- 
-            <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="service-item rounded overflow-hidden h-100 d-flex flex-column">
-                    <img class="img-fluid w-100" src="img/industrial.jpg" alt="Industrial" style="height: 250px; object-fit: cover;">
-                    <div class="position-relative p-4 flex-grow-1">
-                        <div class="service-icon">
-                            <i class="fa fa-lightbulb fa-3x"></i>
-                        </div>
-                        <h4 class="mb-3">Industrial Solar Panel Cleaning</h4>
-                        <p>Specialized cleaning for large-scale solar installations—ensuring peak performance and compliance.</p>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
+      <h6 class="text-primary">Τα Έργα μας</h6>
+      <h1 class="mb-4">Δείτε Πραγματικά Αποτελέσματα Καθαρισμού σε Όλη την Κύπρο</h1>
     </div>
+
+    <div class="row mt-n2 wow fadeInUp" data-wow-delay="0.3s">
+      <div class="col-12">
+        <div class="portfolio-topbar text-center">
+
+          <ul class="list-inline mb-0" id="portfolio-flters">
+            <li class="mx-2 active" data-filter="*">Όλα</li>
+            <li class="mx-2" data-filter=".homes">Σπίτια</li>
+            <li class="mx-2" data-filter=".businesses">Επιχειρήσεις</li>
+            <li class="mx-2" data-filter=".solar-parks">Πάρκα</li>
+            <li class="mx-2" data-filter=".before">Πριν τον καθαρισμό</li>
+
+            <li class="mx-2 portfolio-see-more">
+              <a href="/project-gr.html" aria-label="See more projects">Δες Περισσότερα</a>
+            </li>
+          </ul>
+
+          <!-- Pager -->
+          <div class="portfolio-pager" aria-label="Projects pagination">
+            <button type="button" class="pager-btn is-disabled" id="portfolio-prev" aria-label="Previous photos" aria-disabled="true">
+              <i class="fa fa-chevron-left"></i>
+            </button>
+
+            <span class="pager-text" id="portfolio-pageinfo" aria-live="polite">1 / 1</span>
+
+            <button type="button" class="pager-btn is-disabled" id="portfolio-next" aria-label="Next photos" aria-disabled="true">
+              <i class="fa fa-chevron-right"></i>
+            </button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="row g-4 portfolio-container wow fadeInUp" data-wow-delay="0.5s">
+
+      <!-- All -->
+<!--Business1-->
+<div class="col-lg-4 col-md-6 portfolio-item businesses">
+
+  <div class="portfolio-img rounded overflow-hidden">
+
+    <picture>
+      <!-- WebP -->
+      <source srcset="img/Gallery/business1.webp" type="image/webp">
+
+      <!-- Fallback -->
+      <img
+        class="img-fluid project-thumb"
+        src="img/Gallery/business1.jpg"
+        alt="Commercial solar panels after professional cleaning in Cyprus"
+        loading="lazy"
+        decoding="async"
+        width="900"
+        height="600"
+      >
+    </picture>
+
+    <!-- Lightbox -->
+    <div class="portfolio-btn">
+      <a
+        class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
+        href="img/Gallery/business1.jpg"
+        data-lightbox="portfolio"
+        aria-label="Open full size business solar panel cleaning photo"
+      >
+        <i class="fa fa-eye"></i>
+      </a>
+    </div>
+
+  </div>
+
+</div>
+<!--Business2-->
+<div class="col-lg-4 col-md-6 portfolio-item businesses">
+
+  <div class="portfolio-img rounded overflow-hidden">
+
+    <picture>
+      <!-- WebP -->
+      <source srcset="img/Gallery/business2.webp" type="image/webp">
+
+      <!-- Fallback -->
+      <img
+        class="img-fluid project-thumb"
+        src="img/Gallery/business2.jpg"
+        alt="Commercial solar panels after professional cleaning in Cyprus"
+        loading="lazy"
+        decoding="async"
+        width="900"
+        height="600"
+      >
+    </picture>
+
+    <!-- Lightbox -->
+    <div class="portfolio-btn">
+      <a
+        class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
+        href="img/Gallery/business2.jpg"
+        data-lightbox="portfolio"
+        aria-label="Open full size business solar panel cleaning photo"
+      >
+        <i class="fa fa-eye"></i>
+      </a>
+    </div>
+
+  </div>
+
+</div>
+<!--Business3-->
+<div class="col-lg-4 col-md-6 portfolio-item businesses">
+
+  <div class="portfolio-img rounded overflow-hidden">
+
+    <picture>
+      <!-- WebP -->
+      <source srcset="img/Gallery/test.webp" type="image/webp">
+
+      <!-- Fallback -->
+      <img
+        class="img-fluid project-thumb"
+        src="img/Gallery/business3.jpg"
+        alt="Commercial solar panels after professional cleaning in Cyprus"
+        loading="lazy"
+        decoding="async"
+        width="900"
+        height="600"
+      >
+    </picture>
+
+    <!-- Lightbox -->
+    <div class="portfolio-btn">
+      <a
+        class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
+        href="img/Gallery/business3.jpg"
+        data-lightbox="portfolio"
+        aria-label="Open full size business solar panel cleaning photo"
+      >
+        <i class="fa fa-eye"></i>
+      </a>
+    </div>
+
+  </div>
+
 </div>
 
-<!-- Service End -->
 
+      <!-- Project 1 (Houses) -->
+<!--House1-->
+<div class="col-lg-4 col-md-6 portfolio-item homes">
 
+  <div class="portfolio-img rounded overflow-hidden">
 
-    <!-- Feature Start -->
-     <!-- 
-    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
-        <div class="container feature px-lg-0">
-            <div class="row g-0 mx-lg-0">
-                <div class="col-lg-6 feature-text py-5 wow fadeIn" data-wow-delay="0.1s">
-                    <div class="p-lg-5 ps-lg-0">
-                        <h6 class="text-primary" style="color: #04456A !important;">Why Choose Us!</h6>
-                        <h1 class="mb-4">Reliable, Friendly, and Always On Time</h1>
-                        <p class="mb-4 pb-2">We’re passionate about clean energy and committed to customer satisfaction. Whether it’s your first panel or your fifth clean, we show up ready, equipped, and focused on results you’ll notice immediately.</p>
-                        <div class="row g-4">
-                            <div class="col-6">
-                                <div class="d-flex align-items-center">
-                                    <div class="btn-lg-square bg-primary rounded-circle">
-                                        <i class="fa fa-check text-white"></i>
-                                    </div>
-                                    <div class="ms-4">
-                                        <p class="mb-0">Quality</p>
-                                        <h5 class="mb-0">Services</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="d-flex align-items-center">
-                                    <div class="btn-lg-square bg-primary rounded-circle">
-                                        <i class="fa fa-user-check text-white"></i>
-                                    </div>
-                                    <div class="ms-4">
-                                        <p class="mb-0">Expert</p>
-                                        <h5 class="mb-0">Workers</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="d-flex align-items-center">
-                                    <div class="btn-lg-square bg-primary rounded-circle">
-                                       <i class="fa fa-user-check text-white"></i>
-                                    </div>
-                                    <div class="ms-4">
-                                        <p class="mb-0">Free</p>
-                                        <h5 class="mb-0">Consultation</h5>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="d-flex align-items-center">
-                                    <div class="btn-lg-square bg-primary rounded-circle">
-                                        <i class="fa fa-headphones text-white"></i>
-                                    </div>
-                                    <div class="ms-4">
-                                        <p class="mb-0">Customer</p>
-                                        <h5 class="mb-0">Support</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 pe-lg-0 wow fadeIn" data-wow-delay="0.5s" style="min-height: 400px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute img-fluid w-100 h-100" src="img/feature.jpg" style="object-fit: cover;" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
+    <picture>
+      <!-- WebP for modern browsers -->
+      <source srcset="img/Gallery/house1.webp" type="image/webp">
+
+      <!-- Fallback for older browsers -->
+      <img
+        class="img-fluid project-thumb" 
+        src="img/Gallery/house1.jpg"
+        alt="Home solar panels after professional cleaning in Cyprus"
+        loading="lazy"
+        decoding="async"
+        width="900"
+        height="600"
+      >
+    </picture>
+
+    <!-- Lightbox button -->
+    <div class="portfolio-btn">
+      <a
+        class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
+        href="img/Gallery/house1.jpg"
+        data-lightbox="portfolio"
+        aria-label="Open full size photo"
+      >
+        <i class="fa fa-eye"></i>
+      </a>
     </div>
-    <!-- Feature End -->
+  </div>
+</div>
+<!--Home2-->
+<div class="col-lg-4 col-md-6 portfolio-item homes">
 
+  <div class="portfolio-img rounded overflow-hidden">
 
-    <!-- Projects Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <h6 class="text-primary">Τα Έργα μας</h6>
-                <h1 class="mb-4">Δείτε τα Πιο Πρόσφατα Έργα μας</h1>
-            </div>
-            <div class="row mt-n2 wow fadeInUp" data-wow-delay="0.3s">
-                <div class="col-12 text-center">
-                    <ul class="list-inline mb-5" id="portfolio-flters">
-                        <li class="mx-2 active" data-filter="*">All</li>
-                        <!-- <li class="mx-2" data-filter=".first">Solar Panels</li>-->
-                       <!-- <li class="mx-2" data-filter=".second">Wind Turbines</li>
-                        <li class="mx-2" data-filter=".third">Hydropower Plants</li>-->
-                    </ul>
-                </div>
-            </div>
-            <div class="row g-4 portfolio-container wow fadeInUp" data-wow-delay="0.5s">
-                <div class="col-lg-4 col-md-6 portfolio-item first">
-                    <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="img/projects-1.jpg" alt="">
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="img/projects-1.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            
-                        </div>
-                    </div>
-                    <div class="pt-3">
-                        <hr class="text-primary w-25 my-2">
-                        
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item second">
-                    <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="img/projects-2.jpg" alt="">
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="img/projects-2.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            
-                        </div>
-                    </div>
-                    <div class="pt-3">
-                        <hr class="text-primary w-25 my-2">
-                    
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item third">
-                    <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="img/projects-3.jpg" alt="">
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="img/projects-3.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                        </div>
-                    </div>
-                    <div class="pt-3">
-                        <hr class="text-primary w-25 my-2">
-                       
-                    </div>
-                </div>
-                 <!--
-                <div class="col-lg-4 col-md-6 portfolio-item first">
-                    <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="img/projects-4.jpg" alt="">
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="img/projects-4.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            
-                        </div>
-                    </div>
-                    <div class="pt-3">
-                        <hr class="text-primary w-25 my-2">
-                      
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item second">
-                    <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="img/projects-5.jpg" alt="">
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="img/projects-5.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                            
-                        </div>
-                    </div>
-                    <div class="pt-3">
-                        <hr class="text-primary w-25 my-2">
-                     
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 portfolio-item third">
-                    <div class="portfolio-img rounded overflow-hidden">
-                        <img class="img-fluid" src="img/projects-6.jpg" alt="">
-                        <div class="portfolio-btn">
-                            <a class="btn btn-lg-square btn-outline-light rounded-circle mx-1" href="img/projects-6.jpg" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
-                           
-                        </div>
-                    </div>
-                    <div class="pt-3">
-                        <hr class="text-primary w-25 my-2">
-                   -->
-                    </div>
-                </div>
-            </div>
-        </div>
+    <picture>
+      <!-- WebP for modern browsers -->
+      <source srcset="img/Gallery/house2.webp" type="image/webp">
+
+      <!-- Fallback for older browsers -->
+      <img
+        class="img-fluid project-thumb"
+        src="img/Gallery/house2.jpg"
+        alt="Home solar panels after professional cleaning in Cyprus"
+        loading="lazy"
+        decoding="async"
+        width="900"
+        height="600"
+      >
+    </picture>
+
+    <!-- Lightbox button -->
+    <div class="portfolio-btn">
+      <a
+        class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
+        href="img/Gallery/house2.jpg"
+        data-lightbox="portfolio"
+        aria-label="Open full size photo"
+      >
+        <i class="fa fa-eye"></i>
+      </a>
     </div>
-    <!-- Projects End -->
+  </div>
+</div>
+<!--House3-->
+<div class="col-lg-4 col-md-6 portfolio-item homes">
+
+  <div class="portfolio-img rounded overflow-hidden">
+
+    <picture>
+      <!-- WebP for modern browsers -->
+      <source srcset="img/Gallery/house3.webp" type="image/webp">
+
+      <!-- Fallback for older browsers -->
+      <img
+        class="img-fluid project-thumb" 
+        src="img/Gallery/house3.jpg"
+        alt="Home solar panels after professional cleaning in Cyprus"
+        loading="lazy"
+        decoding="async"
+        width="900"
+        height="600"
+      >
+    </picture>
+
+    <!-- Lightbox button -->
+    <div class="portfolio-btn">
+      <a
+        class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
+        href="img/Gallery/house3.jpg"
+        data-lightbox="portfolio"
+        aria-label="Open full size photo"
+      >
+        <i class="fa fa-eye"></i>
+      </a>
+    </div>
+  </div>
+</div>
+<!--Home4-->
+<div class="col-lg-4 col-md-6 portfolio-item homes">
+
+  <div class="portfolio-img rounded overflow-hidden">
+
+    <picture>
+      <!-- WebP for modern browsers -->
+      <source srcset="img/Gallery/house4.webp" type="image/webp">
+
+      <!-- Fallback for older browsers -->
+      <img
+        class="img-fluid project-thumb"
+        src="img/Gallery/house4.jpg"
+        alt="Home solar panels after professional cleaning in Cyprus"
+        loading="lazy"
+        decoding="async"
+        width="900"
+        height="600"
+      >
+    </picture>
+
+    <!-- Lightbox button -->
+    <div class="portfolio-btn">
+      <a
+        class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
+        href="img/Gallery/house4.jpg"
+        data-lightbox="portfolio"
+        aria-label="Open full size photo"
+      >
+        <i class="fa fa-eye"></i>
+      </a>
+    </div>
+  </div>
+</div>
+<!--House5-->
+<div class="col-lg-4 col-md-6 portfolio-item homes">
+
+  <div class="portfolio-img rounded overflow-hidden">
+
+    <picture>
+      <!-- WebP for modern browsers -->
+      <source srcset="img/Gallery/house5.webp" type="image/webp">
+
+      <!-- Fallback for older browsers -->
+      <img
+        class="img-fluid project-thumb" 
+        src="img/Gallery/house5.jpg"
+        alt="Home solar panels after professional cleaning in Cyprus"
+        loading="lazy"
+        decoding="async"
+        width="900"
+        height="600"
+      >
+    </picture>
+
+    <!-- Lightbox button -->
+    <div class="portfolio-btn">
+      <a
+        class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
+        href="img/Gallery/house5.jpg"
+        data-lightbox="portfolio"
+        aria-label="Open full size photo"
+      >
+        <i class="fa fa-eye"></i>
+      </a>
+    </div>
+  </div>
+</div>
+<!--Home6-->
+<div class="col-lg-4 col-md-6 portfolio-item homes">
+
+  <div class="portfolio-img rounded overflow-hidden">
+
+    <picture>
+      <!-- WebP for modern browsers -->
+      <source srcset="img/Gallery/house6.webp" type="image/webp">
+
+      <!-- Fallback for older browsers -->
+      <img
+        class="img-fluid project-thumb"
+        src="img/Gallery/house6.jpg"
+        alt="Home solar panels after professional cleaning in Cyprus"
+        loading="lazy"
+        decoding="async"
+        width="900"
+        height="600"
+      >
+    </picture>
+
+    <!-- Lightbox button -->
+    <div class="portfolio-btn">
+      <a
+        class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
+        href="img/Gallery/house6.jpg"
+        data-lightbox="portfolio"
+        aria-label="Open full size photo"
+      >
+        <i class="fa fa-eye"></i>
+      </a>
+    </div>
+  </div>
+</div>
+<!--House7-->
+<div class="col-lg-4 col-md-6 portfolio-item homes">
+
+  <div class="portfolio-img rounded overflow-hidden">
+
+    <picture>
+      <!-- WebP for modern browsers -->
+      <source srcset="img/Gallery/house7.webp" type="image/webp">
+
+      <!-- Fallback for older browsers -->
+      <img
+        class="img-fluid project-thumb" 
+        src="img/Gallery/house7.jpg"
+        alt="Home solar panels after professional cleaning in Cyprus"
+        loading="lazy"
+        decoding="async"
+        width="900"
+        height="600"
+      >
+    </picture>
+
+    <!-- Lightbox button -->
+    <div class="portfolio-btn">
+      <a
+        class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
+        href="img/Gallery/house7.jpg"
+        data-lightbox="portfolio"
+        aria-label="Open full size photo"
+      >
+        <i class="fa fa-eye"></i>
+      </a>
+    </div>
+  </div>
+</div>
+<!--Home8-->
+<div class="col-lg-4 col-md-6 portfolio-item homes">
+
+  <div class="portfolio-img rounded overflow-hidden">
+
+    <picture>
+      <!-- WebP for modern browsers -->
+      <source srcset="img/Gallery/house8.webp" type="image/webp">
+
+      <!-- Fallback for older browsers -->
+      <img
+        class="img-fluid project-thumb"
+        src="img/Gallery/house8.jpg"
+        alt="Home solar panels after professional cleaning in Cyprus"
+        loading="lazy"
+        decoding="async"
+        width="900"
+        height="600"
+      >
+    </picture>
+
+    <!-- Lightbox button -->
+    <div class="portfolio-btn">
+      <a
+        class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
+        href="img/Gallery/house8.jpg"
+        data-lightbox="portfolio"
+        aria-label="Open full size photo"
+      >
+        <i class="fa fa-eye"></i>
+      </a>
+    </div>
+  </div>
+</div>
+<!--Home9-->
+<div class="col-lg-4 col-md-6 portfolio-item homes">
+
+  <div class="portfolio-img rounded overflow-hidden">
+
+    <picture>
+      <!-- WebP for modern browsers -->
+      <source srcset="img/Gallery/house9.webp" type="image/webp">
+
+      <!-- Fallback for older browsers -->
+      <img
+        class="img-fluid project-thumb"
+        src="img/Gallery/house9.jpg"
+        alt="Home solar panels after professional cleaning in Cyprus"
+        loading="lazy"
+        decoding="async"
+        width="900"
+        height="600"
+      >
+    </picture>
+
+    <!-- Lightbox button -->
+    <div class="portfolio-btn">
+      <a
+        class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
+        href="img/Gallery/house9.jpg"
+        data-lightbox="portfolio"
+        aria-label="Open full size photo"
+      >
+        <i class="fa fa-eye"></i>
+      </a>
+    </div>
+  </div>
+</div>
+<!--House10-->
+<div class="col-lg-4 col-md-6 portfolio-item homes">
+
+  <div class="portfolio-img rounded overflow-hidden">
+
+    <picture>
+      <!-- WebP for modern browsers -->
+      <source srcset="img/Gallery/house10.webp" type="image/webp">
+
+      <!-- Fallback for older browsers -->
+      <img
+        class="img-fluid project-thumb" 
+        src="img/Gallery/house10.jpg"
+        alt="Home solar panels after professional cleaning in Cyprus"
+        loading="lazy"
+        decoding="async"
+        width="900"
+        height="600"
+      >
+    </picture>
+
+    <!-- Lightbox button -->
+    <div class="portfolio-btn">
+      <a
+        class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
+        href="img/Gallery/house10.jpg"
+        data-lightbox="portfolio"
+        aria-label="Open full size photo"
+      >
+        <i class="fa fa-eye"></i>
+      </a>
+    </div>
+  </div>
+</div>
+<!--Home11-->
+<div class="col-lg-4 col-md-6 portfolio-item homes">
+
+  <div class="portfolio-img rounded overflow-hidden">
+
+    <picture>
+      <!-- WebP for modern browsers -->
+      <source srcset="img/Gallery/house11.webp" type="image/webp">
+
+      <!-- Fallback for older browsers -->
+      <img
+        class="img-fluid project-thumb"
+        src="img/Gallery/house11.jpg"
+        alt="Home solar panels after professional cleaning in Cyprus"
+        loading="lazy"
+        decoding="async"
+        width="900"
+        height="600"
+      >
+    </picture>
+
+    <!-- Lightbox button -->
+    <div class="portfolio-btn">
+      <a
+        class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
+        href="img/Gallery/house11.jpg"
+        data-lightbox="portfolio"
+        aria-label="Open full size photo"
+      >
+        <i class="fa fa-eye"></i>
+      </a>
+    </div>
+  </div>
+</div>
+<!--Home12-->
+<div class="col-lg-4 col-md-6 portfolio-item homes">
+
+  <div class="portfolio-img rounded overflow-hidden">
+
+    <picture>
+      <!-- WebP for modern browsers -->
+      <source srcset="img/Gallery/house12.webp" type="image/webp">
+
+      <!-- Fallback for older browsers -->
+      <img
+        class="img-fluid project-thumb"
+        src="img/Gallery/house12.jpg"
+        alt="Home solar panels after professional cleaning in Cyprus"
+        loading="lazy"
+        decoding="async"
+        width="900"
+        height="600"
+      >
+    </picture>
+
+    <!-- Lightbox button -->
+    <div class="portfolio-btn">
+      <a
+        class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
+        href="img/Gallery/house12.jpg"
+        data-lightbox="portfolio"
+        aria-label="Open full size photo"
+      >
+        <i class="fa fa-eye"></i>
+      </a>
+    </div>
+  </div>
+</div>
+
+      <!-- Project 2 (Businesses) -->
+
+<!--Business4-->
+<div class="col-lg-4 col-md-6 portfolio-item businesses">
+
+  <div class="portfolio-img rounded overflow-hidden">
+
+    <picture>
+      <!-- WebP -->
+      <source srcset="img/Gallery/business4.webp" type="image/webp">
+
+      <!-- Fallback -->
+      <img
+        class="img-fluid project-thumb"
+        src="img/Gallery/business4.jpg"
+        alt="Commercial solar panels after professional cleaning in Cyprus"
+        loading="lazy"
+        decoding="async"
+        width="900"
+        height="600"
+      >
+    </picture>
+
+    <!-- Lightbox -->
+    <div class="portfolio-btn">
+      <a
+        class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
+        href="img/Gallery/business4.jpg"
+        data-lightbox="portfolio"
+        aria-label="Open full size business solar panel cleaning photo"
+      >
+        <i class="fa fa-eye"></i>
+      </a>
+    </div>
+
+  </div>
+
+</div>
+<!--Business5-->
+<div class="col-lg-4 col-md-6 portfolio-item businesses">
+
+  <div class="portfolio-img rounded overflow-hidden">
+
+    <picture>
+      <!-- WebP -->
+      <source srcset="img/Gallery/business5.webp" type="image/webp">
+
+      <!-- Fallback -->
+      <img
+        class="img-fluid project-thumb"
+        src="img/Gallery/business5.jpg"
+        alt="Commercial solar panels after professional cleaning in Cyprus"
+        loading="lazy"
+        decoding="async"
+        width="900"
+        height="600"
+      >
+    </picture>
+
+    <!-- Lightbox -->
+    <div class="portfolio-btn">
+      <a
+        class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
+        href="img/Gallery/business5.jpg"
+        data-lightbox="portfolio"
+        aria-label="Open full size business solar panel cleaning photo"
+      >
+        <i class="fa fa-eye"></i>
+      </a>
+    </div>
+
+  </div>
+
+</div>
+<!--Business6-->
+<div class="col-lg-4 col-md-6 portfolio-item businesses">
+
+  <div class="portfolio-img rounded overflow-hidden">
+
+    <picture>
+      <!-- WebP -->
+      <source srcset="img/Gallery/business6.webp" type="image/webp">
+
+      <!-- Fallback -->
+      <img
+        class="img-fluid project-thumb"
+        src="img/Gallery/business6.jpg"
+        alt="Commercial solar panels after professional cleaning in Cyprus"
+        loading="lazy"
+        decoding="async"
+        width="900"
+        height="600"
+      >
+    </picture>
+
+    <!-- Lightbox -->
+    <div class="portfolio-btn">
+      <a
+        class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
+        href="img/Gallery/business6.jpg"
+        data-lightbox="portfolio"
+        aria-label="Open full size business solar panel cleaning photo"
+      >
+        <i class="fa fa-eye"></i>
+      </a>
+    </div>
+
+  </div>
+
+</div>
+<!--Business7-->
+<div class="col-lg-4 col-md-6 portfolio-item businesses">
+
+  <div class="portfolio-img rounded overflow-hidden">
+
+    <picture>
+      <!-- WebP -->
+      <source srcset="img/Gallery/business7.webp" type="image/webp">
+
+      <!-- Fallback -->
+      <img
+        class="img-fluid project-thumb"
+        src="img/Gallery/business7.jpg"
+        alt="Commercial solar panels after professional cleaning in Cyprus"
+        loading="lazy"
+        decoding="async"
+        width="900"
+        height="600"
+      >
+    </picture>
+
+    <!-- Lightbox -->
+    <div class="portfolio-btn">
+      <a
+        class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
+        href="img/Gallery/business7.jpg"
+        data-lightbox="portfolio"
+        aria-label="Open full size business solar panel cleaning photo"
+      >
+        <i class="fa fa-eye"></i>
+      </a>
+    </div>
+
+  </div>
+
+</div>
+<!--Business8-->
+<div class="col-lg-4 col-md-6 portfolio-item businesses">
+
+  <div class="portfolio-img rounded overflow-hidden">
+
+    <picture>
+      <!-- WebP -->
+      <source srcset="img/Gallery/business8.webp" type="image/webp">
+
+      <!-- Fallback -->
+      <img
+        class="img-fluid project-thumb"
+        src="img/Gallery/business8.jpg"
+        alt="Commercial solar panels after professional cleaning in Cyprus"
+        loading="lazy"
+        decoding="async"
+        width="900"
+        height="600"
+      >
+    </picture>
+
+    <!-- Lightbox -->
+    <div class="portfolio-btn">
+      <a
+        class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
+        href="img/Gallery/business8.jpg"
+        data-lightbox="portfolio"
+        aria-label="Open full size business solar panel cleaning photo"
+      >
+        <i class="fa fa-eye"></i>
+      </a>
+    </div>
+
+  </div>
+
+</div>
+
+
+<!-- Project 3 (Solar Parks) -->
+<!--Solar Park1-->
+<div class="col-lg-4 col-md-6 portfolio-item solar-parks">
+
+  <div class="portfolio-img rounded overflow-hidden">
+
+    <picture>
+      <!-- WebP -->
+      <source srcset="img/Gallery/solarpark1-thumb.webp" type="image/webp">
+
+      <!-- Fallback -->
+      <img
+        class="img-fluid project-thumb"
+        src="img/Gallery/solarpark1.JPEG"
+        alt="Large solar park panels cleaned and restored in Cyprus"
+        loading="lazy"
+        decoding="async"
+        width="900"
+        height="600"
+      >
+    </picture>
+
+    <!-- Lightbox -->
+    <div class="portfolio-btn">
+      <a
+        class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
+        href="img/Gallery/solarpark1.JPEG"
+        data-lightbox="portfolio"
+        aria-label="Open full size solar park cleaning photo"
+      >
+        <i class="fa fa-eye"></i>
+      </a>
+    </div>
+
+  </div>
+
+</div>
+<!--Solar Park2-->
+<div class="col-lg-4 col-md-6 portfolio-item solar-parks">
+
+  <div class="portfolio-img rounded overflow-hidden">
+
+    <picture>
+      <!-- WebP -->
+      <source srcset="img/Gallery/solarpark2-thumb.webp" type="image/webp">
+
+      <!-- Fallback -->
+      <img
+        class="img-fluid project-thumb"
+        src="img/Gallery/solarpark2.JPEG"
+        alt="Large solar park panels cleaned and restored in Cyprus"
+        loading="lazy"
+        decoding="async"
+        width="900"
+        height="600"
+      >
+    </picture>
+
+    <!-- Lightbox -->
+    <div class="portfolio-btn">
+      <a
+        class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
+        href="img/Gallery/solarpark2.JPEG"
+        data-lightbox="portfolio"
+        aria-label="Open full size solar park cleaning photo"
+      >
+        <i class="fa fa-eye"></i>
+      </a>
+    </div>
+
+  </div>
+
+</div>
+<!--Solar Park3-->
+<div class="col-lg-4 col-md-6 portfolio-item solar-parks">
+
+  <div class="portfolio-img rounded overflow-hidden">
+
+    <picture>
+      <!-- WebP -->
+      <source srcset="img/Gallery/solarpark3-thumb.webp" type="image/webp">
+
+      <!-- Fallback -->
+      <img
+        class="img-fluid project-thumb"
+        src="img/Gallery/solarpark3.JPEG"
+        alt="Large solar park panels cleaned and restored in Cyprus"
+        loading="lazy"
+        decoding="async"
+        width="900"
+        height="600"
+      >
+    </picture>
+
+    <!-- Lightbox -->
+    <div class="portfolio-btn">
+      <a
+        class="btn btn-lg-square btn-outline-light rounded-circle mx-1"
+        href="img/Gallery/solarpark3.JPEG"
+        data-lightbox="portfolio"
+        aria-label="Open full size solar park cleaning photo"
+      >
+        <i class="fa fa-eye"></i>
+      </a>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+    </div>
+  </div>
+</div>
+<!-- Projects End -->
 
 
      <!-- Quote Start -->
-    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
-        <div class="container quote px-lg-0">
-            <div class="row g-0 mx-lg-0">
-                <div class="col-lg-6 ps-lg-0 wow fadeIn" data-wow-delay="0.1s" style="min-height: 400px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute img-fluid w-100 h-100" src="img/quote.jpg" style="object-fit: cover;" alt="">
-                    </div>
-                </div>
-                <div class="col-lg-6 quote-text py-5 wow fadeIn" data-wow-delay="0.5s">
-                    <div class="p-lg-5 pe-lg-0">
-                        <h6 class="text-primary" style="color: #04456A !important;">Δωρεάν Προσφορά</h6>
-                        <h1 class="mb-4">Ζητήστε Δωρεάν Προσφορά</h1>
-<p class="mb-4 pb-2">
-    Έτοιμοι να αυξήσετε την αποδοτικότητα των ηλιακών σας πάνελ; Επικοινωνήστε μαζί μας σήμερα για μια δωρεάν προσφορά χωρίς υποχρέωση. Άμεση ανταπόκριση, διαφανής τιμολόγηση και εξυπηρέτηση που μπορείτε να εμπιστευτείτε — ας κάνουμε τα πάνελ σας να λάμψουν ξανά!
-</p>
+<div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+  <div class="container quote px-lg-0">
+    <div class="row g-0 mx-lg-0">
 
-<form action="https://formspree.io/f/myzjvwgp" method="POST">
-    <div class="row g-3">
-        <div class="col-12 col-sm-6">
-            <input type="text" name="name" class="form-control border-0" placeholder="Το Όνομά σας" required style="height: 55px;">
-        </div>
-        <div class="col-12 col-sm-6">
-            <input type="email" name="email" class="form-control border-0" placeholder="Το Email σας" required style="height: 55px;">
-        </div>
-        <div class="col-12 col-sm-6">
-            <input type="text" name="phone" class="form-control border-0" placeholder="Το Κινητό σας" required style="height: 55px;">
-        </div>
+      <!-- Image Column (hidden on mobile) -->
+<div class="col-lg-6 ps-lg-0 wow fadeIn d-none d-lg-block"
+     data-wow-delay="0.1s"
+     style="min-height: 400px;">
+  <div class="position-relative h-100">
+    <picture>
+      <source srcset="img/quote.webp" type="image/webp">
+      <img
+        class="position-absolute img-fluid w-100 h-100"
+        src="img/quote.jpg"
+        alt="Solar panels on a rooftop in Cyprus"
+        loading="lazy"
+        decoding="async"
+        width="4032"
+        height="3024"
+        style="object-fit: cover; object-position: center;">
+    </picture>
+  </div>
+</div>
 
-          <!-- NEW: Area/District selector -->
+
+      <!-- Form Column (mostly back to original) -->
+      <div class="col-lg-6 quote-text py-5 wow fadeIn" data-wow-delay="0.5s">
+        <div class="p-lg-5 pe-lg-0">
+
+          <!-- Keep improved heading styles -->
+          <h6 class="text-primary mb-2" style="color:#04456A !important;">Δωρεάν Προσφορά</h6>
+          <h2 class="mb-4 quote-title">Ζητήστε Δωρεάν Προσφορά</h2>
+
+          <!-- Back to original paragraph -->
+          <p class="mb-4 pb-2">
+           Έτοιμοι να αυξήσετε την απόδοση των φωτοβολταϊκών σας; Επικοινωνήστε μαζί μας σήμερα για μια δωρεάν προσφορά χωρίς καμία υποχρέωση. Γρήγορη ανταπόκριση, διαφανείς τιμές και αξιόπιστη εξυπηρέτηση — ας κάνουμε τα πάνελ σας να λάμψουν ξανά!
+          </p>
+
+          <form action="https://formspree.io/f/myzjvwgp" method="POST">
+            <div class="row g-3">
+
               <div class="col-12 col-sm-6">
-                <select name="area" class="form-select border-0" required style="height:55px;" aria-label="Επιλέξτε Επαρχία">
-                  <option value="" disabled selected>Επιλέξτε Επαρχία</option>
-                  <option value="Λευκωσία">Λευκωσία</option>
-                  <option value="Λάρνακα">Λάρνακα</option>
-                  <option value="Λεμεσό">Λεμεσό</option>
-                  <option value="Πάφο">Πάφο</option>
+                <input type="text" name="name" class="form-control border-0" placeholder="Ονοματεπώνυμο" required style="height:55px;">
+              </div>
+
+              <div class="col-12 col-sm-6">
+                <input type="email" name="email" class="form-control border-0" placeholder="Το Email σας" required style="height:55px;">
+              </div>
+
+              <div class="col-12 col-sm-6">
+                <input type="tel" name="phone" class="form-control border-0" placeholder="Κινητό Τηλέφωνο" required style="height:55px;">
+              </div>
+
+              <div class="col-12 col-sm-6">
+                <select name="area" class="form-select border-0" required style="height:55px;" aria-label="Επιλέξτε Περιοχή">
+                  <option value="" disabled selected>Επιλέξτε Περιοχή</option>
+                    <option value="Nicosia">Λευκωσία</option>
+                    <option value="Larnaca">Λάρνακα</option>
+                    <option value="Limassol">Λεμεσός</option>
+                    <option value="Paphos">Πάφος</option>
+                    <option value="Famagusta">Αμμόχωστος</option>
                 </select>
               </div>
 
+              <div class="col-12 col-sm-6">
+                <select name="service" class="form-select border-0" required style="height:55px;">
+                  <option value="" disabled selected>Επιλέξτε Υπηρεσία</option>
+                  <option value="Residential Solar Panel Cleaning">Καθαρισμός Οικιακών Φωτοβολταϊκών</option>
+                  <option value="Commercial Solar Panel Cleaning">Καθαρισμός Φωτοβολταϊκών για Επιχειρήσεις</option>
+                  <option value="Industrial Solar Panel Cleaning">Καθαρισμός Φωτοβολταϊκών για Βιομηχανίες</option>
+                </select>
+              </div>
 
-        <div class="col-12 col-sm-6">
-            <select name="service" class="form-select border-0" required style="height: 55px;">
-                <option value="" disabled selected>Επιλέξτε Υπηρεσία</option>
-                <option value="Residential Solar Panel Cleaning"> Καθαρισμός Ηλιακών Πάνελ Κατοικιών</option>
-                <option value="Commercial Solar Panel Cleaning">Καθαρισμός Ηλιακών Πάνελ για Επιχειρήσεις</option>
-                <option value="Industrial Solar Panel Cleaning">Καθαρισμός Ηλιακών Πάνελ για Βιομηχανίες</option>
-            </select>
+              <!-- Back to original Call Us button style -->
+              <div class="col-12 col-sm-6 d-flex align-items-center">
+                <a href="tel:+35796252850"
+                   class="btn btn-primary rounded-pill w-100 py-3 px-5 text-center call-btn">
+                  Καλέστε μας
+                </a>
+              </div>
+
+              <div class="col-12">
+                <textarea name="note" class="form-control border-0" rows="4" placeholder="Πρόσθετες Πληροφορίες"></textarea>
+              </div>
+
+              <div class="col-12">
+                <button class="btn btn-primary rounded-pill py-3 px-5" type="submit">Submit</button>
+              </div>
+
+            </div>
+          </form>
+
         </div>
+      </div>
 
-<!-- Call Us button in the same row -->
-<div class="col-12 col-sm-6 d-flex align-items-center">
-  <a href="tel:+35796252850" 
-     class="btn btn-outline-warning rounded-pill w-100 py-3 px-5 text-center">
-     Call Us
-  </a>
+    </div>
+  </div>
 </div>
+<!-- Quote End -->
 
-        <div class="col-12">
-            <textarea name="note" class="form-control border-0" rows="4" placeholder="Ειδική Σημείωση"></textarea>
-        </div>
-        <div class="col-12">
-            <button class="btn btn-primary rounded-pill py-3 px-5" type="submit">Submit</button>
-        </div>
+<!-- Testimonial Start -->
+<div class="container-xxl py-5">
+  <div class="container">
+
+    <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 700px;">
+      <h6 class="text-primary">Αξιολογήσεις</h6>
+      <h1 class="mb-3">Τι Λένε οι Πελάτες μας!</h1>
+
+      <div class="testimonial-stars mb-2" aria-label="5 star rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+      </div>
+
+      <p class="text-muted mb-2">
+        Αληθινά σχόλια από πελάτες από όλη την Κύπρο.
+      </p>
+
+      <!-- Full Google logo under subtitle -->
+      <img
+        class="testimonial-google-logo"
+        src="img/google-logo.svg"
+        alt="Google"
+        loading="lazy"
+        decoding="async"
+      />
     </div>
-</form>
 
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
+    <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
+
+      <!-- 1 -->
+      <div class="testimonial-item text-center">
+        <div class="testimonial-img position-relative">
+          <img class="img-fluid rounded-circle mx-auto mb-4" src="img/testimonial-1.jpg" alt="Client review profile photo" loading="lazy" decoding="async">
+          <div class="btn-square bg-primary rounded-circle">
+            <i class="fa fa-quote-left text-white"></i>
+          </div>
         </div>
+
+        <div class="testimonial-text text-center rounded p-4">
+          <!-- top-right G + tick -->
+          <div class="review-source" aria-label="Review source: Google">
+            <img class="review-source-g" src="img/google-g.svg" alt="" aria-hidden="true">
+            <span class="review-source-verified" tabindex="0" aria-label="Source verified">
+              <i class="fa fa-check-circle"></i>
+              <span class="review-source-tooltip" role="tooltip">Πηγή: Google Reviews</span>
+            </span>
+          </div>
+
+          <p class="testimonial-quote">“Εξαιρετική εξυπηρέτηση και υπέροχο προσωπικό! Τους συνιστώ ανεπιφύλακτα.”</p>
+
+          <!-- stars inside card -->
+          <div class="testimonial-stars testimonial-stars--card mb-2" aria-label="5 star rating">
+            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+          </div>
+
+          <h5 class="mb-1">Elite</h5>
+          <span class="fst-italic testimonial-role">Local Guide</span>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="testimonial-item text-center">
+        <div class="testimonial-img position-relative">
+          <img class="img-fluid rounded-circle mx-auto mb-4" src="img/testimonial-2.jpg" alt="Client review profile photo" loading="lazy" decoding="async">
+          <div class="btn-square bg-primary rounded-circle">
+            <i class="fa fa-quote-left text-white"></i>
+          </div>
+        </div>
+
+        <div class="testimonial-text text-center rounded p-4">
+          <div class="review-source" aria-label="Review source: Google">
+            <img class="review-source-g" src="img/google-g.svg" alt="" aria-hidden="true">
+            <span class="review-source-verified" tabindex="0" aria-label="Source verified">
+              <i class="fa fa-check-circle"></i>
+              <span class="review-source-tooltip" role="tooltip">Πηγή: Google Reviews</span>
+            </span>
+          </div>
+
+          <p class="testimonial-quote">“Έφτασαν ακριβώς στην ώρα τους, χρησιμοποίησαν επαγγελματικό εξοπλισμό και πραγματοποίησαν τον καθαρισμό με μεγάλη προσοχή, χωρίς καμία φθορά. Πολύ φιλική ομάδα, πάντα πρόθυμοι να εξηγήσουν κάθε βήμα της διαδικασίας”</p>
+
+          <div class="testimonial-stars testimonial-stars--card mb-2" aria-label="5 star rating">
+            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+          </div>
+
+          <h5 class="mb-1">Stefani Savva</h5>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="testimonial-item text-center">
+        <div class="testimonial-img position-relative">
+          <img class="img-fluid rounded-circle mx-auto mb-4" src="img/testimonial-3.jpg" alt="Client review profile photo" loading="lazy" decoding="async">
+          <div class="btn-square bg-primary rounded-circle">
+            <i class="fa fa-quote-left text-white"></i>
+          </div>
+        </div>
+
+        <div class="testimonial-text text-center rounded p-4">
+          <div class="review-source" aria-label="Review source: Google">
+            <img class="review-source-g" src="img/google-g.svg" alt="" aria-hidden="true">
+            <span class="review-source-verified" tabindex="0" aria-label="Source verified">
+              <i class="fa fa-check-circle"></i>
+              <span class="review-source-tooltip" role="tooltip">Πηγή: Google Reviews</span>
+            </span>
+          </div>
+
+          <p class="testimonial-quote">“Service minded and job well done with professional equipment. Thanks guys!”</p>
+
+          <div class="testimonial-stars testimonial-stars--card mb-2" aria-label="5 star rating">
+            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+          </div>
+
+          <h5 class="mb-1">Magnus Edling</h5>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="testimonial-item text-center">
+        <div class="testimonial-img position-relative">
+          <img class="img-fluid rounded-circle mx-auto mb-4" src="img/testimonial-4.jpg" alt="Client review profile photo" loading="lazy" decoding="async">
+          <div class="btn-square bg-primary rounded-circle">
+            <i class="fa fa-quote-left text-white"></i>
+          </div>
+        </div>
+
+        <div class="testimonial-text text-center rounded p-4">
+          <div class="review-source" aria-label="Review source: Google">
+            <img class="review-source-g" src="img/google-g.svg" alt="" aria-hidden="true">
+            <span class="review-source-verified" tabindex="0" aria-label="Source verified">
+              <i class="fa fa-check-circle"></i>
+              <span class="review-source-tooltip" role="tooltip">Πηγή: Google Reviews</span>
+            </span>
+          </div>
+
+          <p class="testimonial-quote">“Η στέγη μου ειναι με κεραμίδια και δύσκολη στην πρόσβαση, αλλά η δουλειά εγινε πολύ προσεκτικα και επαγγελματικα. Τους συστήνω ανεπιφύλακτα”</p>
+
+          <div class="testimonial-stars testimonial-stars--card mb-2" aria-label="5 star rating">
+            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+          </div>
+
+          <h5 class="mb-1">Christophoros Theophanous</h5>
+          <span class="fst-italic testimonial-role">Local Guide</span>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="testimonial-item text-center">
+        <div class="testimonial-img position-relative">
+          <img class="img-fluid rounded-circle mx-auto mb-4" src="img/testimonial-5.jpg" alt="Client review profile photo" loading="lazy" decoding="async">
+          <div class="btn-square bg-primary rounded-circle">
+            <i class="fa fa-quote-left text-white"></i>
+          </div>
+        </div>
+
+        <div class="testimonial-text text-center rounded p-4">
+          <div class="review-source" aria-label="Review source: Google">
+            <img class="review-source-g" src="img/google-g.svg" alt="" aria-hidden="true">
+            <span class="review-source-verified" tabindex="0" aria-label="Source verified">
+              <i class="fa fa-check-circle"></i>
+              <span class="review-source-tooltip" role="tooltip">Πηγή: Google Reviews</span>
+            </span>
+          </div>
+
+          <p class="testimonial-quote">“Πολύ επαγγελματική και αποτελεσματική εξυπηρέτηση! Ήρθαν στην ώρα τους, ήταν ευγενικοί και τα πάνελ έμειναν πεντακάθαρα.”</p>
+
+          <div class="testimonial-stars testimonial-stars--card mb-2" aria-label="5 star rating">
+            <i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i><i class="fa fa-star"></i>
+          </div>
+
+          <h5 class="mb-1">Christina Michaelidou</h5>
+        </div>
+      </div>
+
     </div>
-    <!-- Quote End -->
 
-    <!-- Testimonial Start -->
-    <!--<div class="container-xxl py-5">
-        <div class="container">
-            <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
-                <h6 class="text-primary">Testimonial</h6>
-                <h1 class="mb-4">What Our Clients Say!</h1>
-            </div>
-            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
-                <div class="testimonial-item text-center">
-                    <div class="testimonial-img position-relative">
-                        <img class="img-fluid rounded-circle mx-auto mb-5" src="img/testimonial-1.jpg">
-                        <div class="btn-square bg-primary rounded-circle">
-                            <i class="fa fa-quote-left text-white"></i>
-                        </div>
-                    </div>
-                    <div class="testimonial-text text-center rounded p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
-                        <h5 class="mb-1">Client Name</h5>
-                        <span class="fst-italic">Profession</span>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <div class="testimonial-img position-relative">
-                        <img class="img-fluid rounded-circle mx-auto mb-5" src="img/testimonial-2.jpg">
-                        <div class="btn-square bg-primary rounded-circle">
-                            <i class="fa fa-quote-left text-white"></i>
-                        </div>
-                    </div>
-                    <div class="testimonial-text text-center rounded p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
-                        <h5 class="mb-1">Client Name</h5>
-                        <span class="fst-italic">Profession</span>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <div class="testimonial-img position-relative">
-                        <img class="img-fluid rounded-circle mx-auto mb-5" src="img/testimonial-3.jpg">
-                        <div class="btn-square bg-primary rounded-circle">
-                            <i class="fa fa-quote-left text-white"></i>
-                        </div>
-                    </div>
-                    <div class="testimonial-text text-center rounded p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
-                        <h5 class="mb-1">Client Name</h5>
-                        <span class="fst-italic">Profession</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>-->
-    <!-- Testimonial End -->
+    <!-- Google Review CTA -->
+    <div class="review-cta text-center mt-5 wow fadeInUp" data-wow-delay="0.1s">
+      <h3 class="review-cta-title mb-2">Σας ευχαριστούμε για την εμπιστοσύνη σας!</h3>
+      <p class="review-cta-text mb-4">
+         Η γνώμη σας είναι πολύ σημαντική για εμάς. Αφήστε μας μια αξιολόγηση στο Google!
+      </p>
+
+      <a
+        class="btn btn-primary rounded-pill py-3 px-5 review-google-btn"
+        href="https://www.google.com/maps/place/Solar+Shine+Ltd/@35.1677592,32.7653837,264141m/data=!3m1!1e3!4m8!3m7!1s0x42f89868a39790d5:0x15595b0a14a9f98!8m2!3d35.1695529!4d33.4261057!9m1!1b1!16s%2Fg%2F11yf_6kskh?entry=ttu&g_ep=EgoyMDI2MDEyMS4wIKXMDSoASAFQAw%3D%3D"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label="Leave Solar Shine a Google review (opens in a new tab)"
+      >
+        <i class="fab fa-google me-2"></i>
+        Αξιολογήστε μας στο Google!
+      </a>
+    </div>
+
+  </div>
+</div>
+<!-- Testimonial End -->
 
     <!-- FAQ Start (GR) -->
 <section id="faq" class="py-5">
@@ -792,7 +1763,7 @@
         </h3>
         <div id="a6-gr" class="accordion-collapse collapse" aria-labelledby="q6-gr" data-bs-parent="#faqAccordion">
           <div class="accordion-body">
-            Καλύπτουμε όλες τις επαρχίες: <strong>Λευκωσία, Λεμεσός, Λάρνακα και Πάφος</strong>.
+            Καλύπτουμε όλες τις επαρχίες: <strong>Λευκωσία, Λεμεσό, Λάρνακα, Πάφο και Αμμόχωστο</strong>.
           </div>
         </div>
       </div>
@@ -879,7 +1850,7 @@
       "name": "Ποιες περιοχές εξυπηρετείτε;",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Καλύπτουμε όλες τις επαρχίες: Λευκωσία, Λεμεσός, Λάρνακα και Πάφος. Για άλλες περιοχές, επικοινωνήστε μαζί μας."
+        "text": "Καλύπτουμε όλες τις επαρχίες: Λευκωσία, Λεμεσό, Λάρνακα, Πάφο και Αμμόχωστο."
       }
     },
     {
@@ -904,227 +1875,100 @@
 
 
     <!-- Footer Start -->
-    <div class="container-fluid bg-dark text-body footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="text-white mb-4">Στοιχεία Επικοινωνίας</h5>
-                    
-                    <p class="mb-2">
-                    <i class="fa fa-phone-alt me-3"></i>
-                    <a href="tel:+35796252850" class="text-white text-decoration-none">+357 96252850</a></p>
-                    <p class="mb-2">
-                    <i class="fa fa-envelope me-3"></i>
-                    <a href="mailto:solarshine.cyprus@gmail.com" class="text-white text-decoration-none">solarshine.cyprus@gmail.com</a></p>
-                    <div class="d-flex pt-2">
-                        <a class="btn btn-square btn-outline-light btn-social" href="https://www.facebook.com/profile.php?id=61577902356615"><i class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square btn-outline-light btn-social" href="https://www.instagram.com/solarshinecyprus/"><i class="fab fa-instagram"></i></a>
-                        <a class="btn btn-square btn-outline-light btn-social" href="https://www.tiktok.com/@solarshinecyprus?is_from_webapp=1&sender_device=pc"><i class="fab fa-tiktok"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="text-white mb-4">Quick Links</h5>
-                    <a class="btn btn-link" href="about-gr.html">Σχετικά με Εμάς</a>
-                    <a class="btn btn-link" href="contact-gr.html">Επικοινωνήστε Μαζί μας</a>
-                    <a class="btn btn-link" href="service-gr.html">Οι Υπηρεσίες μας</a>
+<div class="container-fluid bg-dark text-body footer mt-1 pt-1 wow fadeIn" data-wow-delay="0.1s">
+  <div class="container py-5">
+    <div class="row g-5">
 
-                </div>
-                <div class="col-lg-3 col-md-6">
- <!--
-                    <h5 class="text-white mb-4">Project Gallery</h5>
-                    <div class="row g-2">
-                        <div class="col-6 col-md-4">
-                            <img class="gallery-img" src="img/gallery-1.jpg" alt="">
-                        </div>
-                        <div class="col-6 col-md-4">
-                            <img class="gallery-img" src="img/gallery-2.jpg" alt="">
-                        </div>
-                        <div class="col-6 col-md-4">
-                            <img class="gallery-img" src="img/gallery-3.jpg" alt="">
-                        </div>
-                        <div class="col-6 col-md-4">
-                            <img class="gallery-img" src="img/gallery-4.jpg" alt="">
-                        </div>
-                        <div class="col-6 col-md-4">
-                            <img class="gallery-img" src="img/gallery-5.jpg" alt="">
-                        </div>
-                        <div class="col-6 col-md-4">
-                            <img class="gallery-img" src="img/gallery-6.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    -->
-        <h5 class="text-white mb-4">Newsletter</h5>
-        <p>Μείνετε ενημερωμένοι με αποκλειστικές προσφορές — απευθείας στο email σας.</p>
-
-        <!-- Begin Brevo Form -->
-<!-- START - We recommend to place the below code in head tag of your website html  -->
-<style>
-  @font-face {
-    font-display: block;
-    font-family: Roboto;
-    src: url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/7529907e9eaf8ebb5220c5f9850e3811.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/normal/normal/25c678feafdc175a70922a116c9be3e7.woff) format("woff")
-  }
-
-  @font-face {
-    font-display: fallback;
-    font-family: Roboto;
-    font-weight: 600;
-    src: url(https://assets.brevo.com/font/Roboto/Latin/medium/normal/6e9caeeafb1f3491be3e32744bc30440.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/medium/normal/71501f0d8d5aa95960f6475d5487d4c2.woff) format("woff")
-  }
-
-  @font-face {
-    font-display: fallback;
-    font-family: Roboto;
-    font-weight: 700;
-    src: url(https://assets.brevo.com/font/Roboto/Latin/bold/normal/3ef7cf158f310cf752d5ad08cd0e7e60.woff2) format("woff2"), url(https://assets.brevo.com/font/Roboto/Latin/bold/normal/ece3a1d82f18b60bcce0211725c476aa.woff) format("woff")
-  }
-
-  #sib-container input:-ms-input-placeholder {
-    text-align: left;
-    font-family: Helvetica, sans-serif;
-    color: #c0ccda;
-  }
-
-  #sib-container input::placeholder {
-    text-align: left;
-    font-family: Helvetica, sans-serif;
-    color: #c0ccda;
-  }
-
-  #sib-container textarea::placeholder {
-    text-align: left;
-    font-family: Helvetica, sans-serif;
-    color: #c0ccda;
-  }
-
-  #sib-container a {
-    text-decoration: underline;
-    color: #2BB2FC;
-  }
-</style>
-<link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
-<!--  END - We recommend to place the above code in head tag of your website html -->
-
-<!-- START - We recommend to place the below code where you want the form in your website html  -->
-<div class="sib-form" style="text-align: center;
-         background-color: #1a2a36;                                 ">
-  <div id="sib-form-container" class="sib-form-container" style="margin-top: -30px; margin-left: -20px;">
-
-    <div id="error-message" class="sib-form-message-panel" style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;max-width:540px;">
-      <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
-        <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
-          <path d="M256 40c118.621 0 216 96.075 216 216 0 119.291-96.61 216-216 216-119.244 0-216-96.562-216-216 0-119.203 96.602-216 216-216m0-32C119.043 8 8 119.083 8 256c0 136.997 111.043 248 248 248s248-111.003 248-248C504 119.083 392.957 8 256 8zm-11.49 120h22.979c6.823 0 12.274 5.682 11.99 12.5l-7 168c-.268 6.428-5.556 11.5-11.99 11.5h-8.979c-6.433 0-11.722-5.073-11.99-11.5l-7-168c-.283-6.818 5.167-12.5 11.99-12.5zM256 340c-15.464 0-28 12.536-28 28s12.536 28 28 28 28-12.536 28-28-12.536-28-28-28z" />
-        </svg>
-        <span class="sib-form-message-panel__inner-text">
-                          Your subscription could not be saved. Please try again.
-                      </span>
-      </div>
+      <!-- Column 1: Logo + short text -->
+<div class="col-lg-3 col-md-6">
+  <a href="/" class="footer-brand d-inline-block mb-3 text-decoration-none" aria-label="SolarShine Home">
+    <div class="footer-logo-wrap">
+      <img src="img/logo1.png" alt="SolarShine Cyprus" class="footer-logo-lg">
     </div>
-    <div></div>
-    <div id="success-message" class="sib-form-message-panel" style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#085229; background-color:#e7faf0; border-radius:3px; border-color:#13ce66;max-width:540px;">
-      <div class="sib-form-message-panel__text sib-form-message-panel__text--center">
-        <svg viewBox="0 0 512 512" class="sib-icon sib-notification__icon">
-          <path d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 464c-118.664 0-216-96.055-216-216 0-118.663 96.055-216 216-216 118.664 0 216 96.055 216 216 0 118.663-96.055 216-216 216zm141.63-274.961L217.15 376.071c-4.705 4.667-12.303 4.637-16.97-.068l-85.878-86.572c-4.667-4.705-4.637-12.303.068-16.97l8.52-8.451c4.705-4.667 12.303-4.637 16.97.068l68.976 69.533 163.441-162.13c4.705-4.667 12.303-4.637 16.97.068l8.451 8.52c4.668 4.705 4.637 12.303-.068 16.97z" />
-        </svg>
-        <span class="sib-form-message-panel__inner-text">
-                          Your subscription has been successful.
-                      </span>
+  </a>
+
+  <p class="mb-3 footer-muted">
+    Επαγγελματικός καθαρισμός φωτοβολταϊκών σε όλη την Κύπρο.
+  </p>
+  <p class="mb-0 footer-muted-2">
+    Λευκωσία • Λεμεσός • Λάρνακα • Πάφος • Αμμόχωστος
+  </p>
+</div>
+
+
+      <!-- Column 2: Follow Us + social icons -->
+      <div class="col-lg-3 col-md-6">
+        <h5 class="text-white mb-4">Ακολουθήστε μας</h5>
+        <p class="footer-muted mb-3">Ακολουθήστε μας στα μέσα κοινωνικής δικτύωσης για συμβουλές καθαρισμού και ενημερώσεις.</p>
+
+        <div class="d-flex pt-2 gap-2">
+          <a class="btn btn-square btn-outline-light btn-social"
+             href="https://www.facebook.com/profile.php?id=61577902356615"
+             aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+
+          <a class="btn btn-square btn-outline-light btn-social"
+             href="https://www.instagram.com/solarshinecyprus/"
+             aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+
+          <a class="btn btn-square btn-outline-light btn-social"
+             href="https://www.tiktok.com/@solarshinecyprus?is_from_webapp=1&sender_device=pc"
+             aria-label="TikTok">
+            <i class="fab fa-tiktok"></i>
+          </a>
+        </div>
       </div>
-    </div>
-    <div></div>
-    <div id="sib-container" class="sib-container--large sib-container--vertical" style="text-align:center; background-color:rgba(26,42,54,1); max-width:540px; border-radius:3px; border-width:1px; border-color:#C0CCD9; border-style:solid; direction:ltr">
-      <form id="sib-form" method="POST" action="https://57150c43.sibforms.com/serve/MUIFAAv1W1EF6KxGwGyxUt1DHMctpFONoNT8twCNDD-qQSKirP8LfTThVCGnuNKg3Opr0WH-MExFcHFdyXy-m_7QMQeJFB1UFRkpv4-7DyzZpSxvDkDha44bYWCHlJV1lFN-zzCM62rpmz06TMGgQmkVOwSpPTLuJwBVTXmiWQUcfI1as8qGAV_RrAEnAp4dFJ1tCb7iuuqP5Cxv" data-type="subscription">
-        <div style="padding: 8px 0;">
-          <div class="sib-input sib-form-block">
-            <div class="form__entry entry_block">
-              <div class="form__label-row ">
-                <label class="entry__label" style="font-weight: 700; text-align:left; font-size:16px; text-align:left; font-weight:700; font-family:Helvetica, sans-serif; color:#3c4858;" for="EMAIL" data-required="*">Enter your email address to subscribe</label>
 
-                <div class="entry__field">
-                  <input class="input " type="text" id="EMAIL" name="EMAIL" autocomplete="off" placeholder="EMAIL" data-required="true" required />
-                </div>
-              </div>
+      <!-- Column 3: Services -->
+      <div class="col-lg-3 col-md-6">
+        <h5 class="text-white mb-4">Υπηρεσίες</h5>
+        <a class="btn btn-link" href="service-gr.html">Καθαρισμός Κατοικιών</a>
+        <a class="btn btn-link" href="service-gr.html#commercial">Καθαρισμός Επιχειρήσεων</a>
+        <a class="btn btn-link" href="service-gr.html#industrial">Βιομηχανικοί Χώροι & Φωτοβολταϊκά Πάρκα</a>
+        <a class="btn btn-link" href="faq-gr.html#faq">Ερωτήσεις</a>
+      </div>
 
-              <label class="entry__error entry__error--primary" style="font-size:16px; text-align:left; font-family:Helvetica, sans-serif; color:#661d1d; background-color:#ffeded; border-radius:3px; border-color:#ff4949;">
-              </label>
-              <label class="entry__specification" style="font-size:12px; text-align:left; font-family:Helvetica, sans-serif; color:#8390A4; text-align:left">
-                Provide your email address to subscribe. For e.g abc@xyz.com
-              </label>
-            </div>
-          </div>
-        </div>
-        <div style="padding: 8px 0;">
-          <div class="sib-form-block" style="text-align: left">
-            <button class="sib-form-block__button sib-form-block__button-with-loader" style="font-size:16px; text-align:left; font-weight:700; font-family:Helvetica, sans-serif; color:#FFFFFF; background-color:#3E4857; border-radius:3px; border-width:0px;" form="sib-form" type="submit">
-              <svg class="icon clickable__icon progress-indicator__icon sib-hide-loader-icon" viewBox="0 0 512 512" style="">
-                <path d="M460.116 373.846l-20.823-12.022c-5.541-3.199-7.54-10.159-4.663-15.874 30.137-59.886 28.343-131.652-5.386-189.946-33.641-58.394-94.896-95.833-161.827-99.676C261.028 55.961 256 50.751 256 44.352V20.309c0-6.904 5.808-12.337 12.703-11.982 83.556 4.306 160.163 50.864 202.11 123.677 42.063 72.696 44.079 162.316 6.031 236.832-3.14 6.148-10.75 8.461-16.728 5.01z" />
-              </svg>
-              SUBSCRIBE
-            </button>
-          </div>
-        </div>
+      <!-- Column 4: Contact Details -->
+      <div class="col-lg-3 col-md-6">
+        <h5 class="text-white mb-4">Στοιχεία Επικοινωνίας</h5>
 
-        <input type="text" name="email_address_check" value="" class="input--hidden">
-        <input type="hidden" name="locale" value="en">
-      </form>
+        <p class="mb-2">
+          <i class="fa fa-phone-alt me-3"></i>
+          <a href="tel:+35796252850" class="text-white text-decoration-none">+357 96252850</a>
+        </p>
+
+        <p class="mb-3">
+          <i class="fa fa-envelope me-3"></i>
+          <a href="mailto:solarshine.cyprus@gmail.com" class="text-white text-decoration-none">solarshine.cyprus@gmail.com</a>
+        </p>
+
+        <a href="quote-gr.html" class="btn btn-primary rounded-pill px-4 py-2 mt-2">
+          Ζητήστε Δωρεάν Προσφορά
+        </a>
+      </div>
+
     </div>
   </div>
 </div>
-<!-- END - We recommend to place the above code where you want the form in your website html  -->
 
-<!-- START - We recommend to place the below code in footer or bottom of your website html  -->
-<script>
-  window.REQUIRED_CODE_ERROR_MESSAGE = 'Please choose a country code';
-  window.LOCALE = 'en';
-  window.EMAIL_INVALID_MESSAGE = window.SMS_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
+  <div class="footer-copyright">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 text-center text-md-start mb-2 mb-md-0">
+        &copy; <a href="#" class="text-decoration-none">solarshine.com.cy</a> All Right Reserved.
+      </div>
 
-  window.REQUIRED_ERROR_MESSAGE = "This field cannot be left blank. ";
-
-  window.GENERIC_INVALID_MESSAGE = "The information provided is invalid. Please review the field format and try again.";
-
-
-
-
-  window.translation = {
-    common: {
-      selectedList: '{quantity} list selected',
-      selectedLists: '{quantity} lists selected',
-      selectedOption: '{quantity} selected',
-      selectedOptions: '{quantity} selected',
-    }
-  };
-
-  var AUTOHIDE = Boolean(0);
-</script>
-
-<script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
-
-
-<!-- END - We recommend to place the above code in footer or bottom of your website html  -->
-<!-- End Brevo Form -->
-        </div>
-
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="copyright">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a href="#">solarshine.com.cy</a> All Right Reserved.
-                    </div>
-                    <div class="col-md-6 text-center text-md-end">
-                        <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                        Designed By <a href="https://htmlcodex.com">HTML Codex</a>
-                        <br>Distributed By: <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+      <div class="col-md-6 text-center text-md-end footer-credits">
+        Designed By: ConstantinosG</a><br>
+      </div>
     </div>
-    <!-- Footer End -->
+  </div>
+</div>
+
+<!-- Footer End -->
 
 
     <!-- Back to Top -->
