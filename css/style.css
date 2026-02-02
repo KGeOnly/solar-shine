@@ -1567,7 +1567,7 @@ button:active {
     right: 12px;
     bottom: 12px;
 
-    width: clamp(150px, 48vw, 240px);  /* scales nicely */
+    width: clamp(135px, 45vw, 220px);  /* scales nicely */
     max-width: none;
 
     max-height: 80%;               /* IMPORTANT: prevents it from becoming huge */
@@ -1584,7 +1584,12 @@ button:active {
     display: block;
   }
 
+  .feature-main-img img{
+    object-position: 105% center;
+  }
+
 }
+
 
 
 
